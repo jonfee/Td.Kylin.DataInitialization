@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<empirical>
+  <!--说明：
+  *   biztype:      业务类型（具体参照枚举Td.Kylin.EnumLibrary.UserActivityType）
+  *   score:        得分
+  *   maxscore:     最高可得分
+  *   unit:         得分限制单位（具体参照枚举：Td.Kylin.EnumLibrary.ScoreMaxLimitUnit）
+  *   repeatable:   是否可重复得分（true可重复得分，false不能重复）
+  -->
+  <rule biztype="1" score="30" maxscore="30" unit="1" repeatable="false" />
+  <rule biztype="2" score="20" maxscore="20" unit="1" repeatable="false" />
+  <rule biztype="3" score="20" maxscore="20" unit="1" repeatable="false" />
+  <rule biztype="4" score="30" maxscore="30" unit="1" repeatable="false" />
+  <rule biztype="5" score="10" maxscore="10" unit="2" repeatable="true" />
+  <rule biztype="6" score="1" maxscore="30" unit="2" repeatable="true" />
+  <rule biztype="7" score="5" maxscore="50" unit="2" repeatable="true" />
+  <rule biztype="8" score="1" maxscore="30" unit="2" repeatable="true" />
+  <rule biztype="9" score="30" maxscore="30" unit="1" repeatable="true" />
+  <rule biztype="10" score="30" maxscore="30" unit="1" repeatable="true" />
+  <rule biztype="11" score="10" maxscore="100" unit="2" repeatable="true" />
+  <rule biztype="12" score="5" maxscore="100" unit="2" repeatable="true" />
+  <rule biztype="13" score="20" maxscore="20" unit="1" repeatable="false" />
+  <rule biztype="14" score="20" maxscore="20" unit="1" repeatable="true" />
+  <rule biztype="15" score="2" maxscore="2" unit="1" repeatable="true" />
+  <rule biztype="16" score="5" maxscore="5" unit="1" repeatable="false" />
+  <rule biztype="17" score="1" maxscore="10" unit="2" repeatable="true" />
+  <rule biztype="18" score="1" maxscore="10" unit="2" repeatable="true" />
+</empirical>

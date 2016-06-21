@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <level name="Lv1" min="0" icon="" enable="true"></level>
+  <level name="Lv2" min="51" icon="" enable="true"></level>
+  <level name="Lv3" min="201" icon="" enable="true"></level>
+  <level name="Lv4" min="501" icon="" enable="true"></level>
+  <level name="Lv5" min="1001" icon="" enable="true"></level>
+  <level name="Lv6" min="2001" icon="" enable="true"></level>
+  <level name="Lv7" min="5001" icon="" enable="true"></level>
+  <level name="Lv8" min="8001" icon="" enable="true"></level>
+  <level name="Lv9" min="12001" icon="" enable="true"></level>
+  <level name="Lv10" min="16001" icon="" enable="true"></level>
+  <level name="Lv11" min="20001" icon="" enable="true"></level>
+  <level name="Lv12" min="25001" icon="" enable="true"></level>
+  <level name="Lv13" min="35001" icon="" enable="true"></level>
+  <level name="Lv14" min="50001" icon="" enable="true"></level>
+  <level name="Lv15" min="80001" icon="" enable="true"></level>
+  <level name="Lv16" min="120001" icon="" enable="true"></level>
+  <level name="Lv17" min="200001" icon="" enable="true"></level>
+  <level name="Lv18" min="500001" icon="" enable="true"></level>
+  <level name="Lv19" min="1500001" icon="" enable="true"></level>
+  <level name="Lv20" min="5000001" icon="" enable="true"></level>
+</root>

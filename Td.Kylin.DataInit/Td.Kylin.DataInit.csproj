@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A9CD1A45-56A0-4053-B84E-9DE5829CA7F5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Td.Kylin.DataInit</RootNamespace>
+    <AssemblyName>Td.Kylin.DataInit</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework.Core, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.Core.7.0.0-rc1-final\lib\net451\EntityFramework.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.MicrosoftSqlServer, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.MicrosoftSqlServer.7.0.0-rc1-final\lib\net451\EntityFramework.MicrosoftSqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.Relational, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.Relational.7.0.0-rc1-final\lib\net451\EntityFramework.Relational.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Caching.Abstractions.1.0.0-rc1-final\lib\net451\Microsoft.Extensions.Caching.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Memory, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Caching.Memory.1.0.0-rc1-final\lib\net451\Microsoft.Extensions.Caching.Memory.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.1.0.0-rc1-final\lib\net451\Microsoft.Extensions.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Abstractions.1.0.0-rc1-final\lib\net451\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Binder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Binder.1.0.0-rc1-final\lib\net451\Microsoft.Extensions.Configuration.Binder.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.1.0.0-rc1-final\lib\net451\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.1.0.0-rc1-final\lib\net451\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.1.0.0-rc1-final\lib\net451\Microsoft.Extensions.Logging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.1.0.0-rc1-final\lib\net451\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.OptionsModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.OptionsModel.1.0.0-rc1-final\lib\net451\Microsoft.Extensions.OptionsModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.1.0.0-rc1-final\lib\net451\Microsoft.Extensions.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Remotion.Linq, Version=2.0.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Remotion.Linq.2.0.1\lib\net45\Remotion.Linq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Collections.Immutable, Version=1.1.36.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.1.1.36\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Abstractions, Version=2.0.2.26, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.Abstractions.2.0.2.26\lib\net45\System.Configuration.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.0.0-beta-23516\lib\dotnet5.2\System.Diagnostics.DiagnosticSource.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Interactive.Async, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ix-Async.1.2.5\lib\net45\System.Interactive.Async.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Td.AspNet.Utils, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Td.AspNet.Utils.1.0.0-rc1-31\lib\net46\Td.AspNet.Utils.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Td.CoreLibrary, Version=1.1.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Td.CoreLibrary.1.1.7-beta\lib\net46\Td.CoreLibrary.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Td.Kylin.Entity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Td.Kylin.Entity.1.0.0-rc1-39\lib\net46\Td.Kylin.Entity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Td.Kylin.EnumLibrary, Version=1.0.39.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Td.Kylin.EnumLibrary.1.0.48-bata\lib\net46\Td.Kylin.EnumLibrary.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\MsgWriter.cs" />
+    <Compile Include="Core\ProgressUpdater.cs" />
+    <Compile Include="Core\Tools.cs" />
+    <Compile Include="DataInitType.cs" />
+    <Compile Include="Data\DataContext.cs" />
+    <Compile Include="Data\DBConnectionRoot.cs" />
+    <Compile Include="Data\DbSet.cs" />
+    <Compile Include="Core\EnumExtensions.cs" />
+    <Compile Include="InitServices\ADPositionInitService.cs" />
+    <Compile Include="InitServices\ApiAuthorizaInitService.cs" />
+    <Compile Include="InitServices\EmpiricalInitService.cs" />
+    <Compile Include="InitServices\GlobalConfigInitService.cs" />
+    <Compile Include="ServiceProvider\GlobalConfigProvider.cs" />
+    <Compile Include="InitServices\IDataInit.cs" />
+    <Compile Include="InitServices\IndustryInitService.cs" />
+    <Compile Include="InitServices\PointsInitService.cs" />
+    <Compile Include="InitServices\SystemAreaInitService.cs" />
+    <Compile Include="InitServices\UserLevelInitService.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AdPositionModel.cs" />
+    <Compile Include="Model\ApiAuthorizaModel.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceProvider\AdminAccountProvider.cs" />
+    <Compile Include="Model\AdminAccountModel.cs" />
+    <Compile Include="InitServices\AdminAccountInitService.cs" />
+    <Compile Include="InitServices\BaseInitService.cs" />
+    <Compile Include="ServiceProvider\AdPositionProvider.cs" />
+    <Compile Include="ServiceProvider\ApiAuthorizeProvider.cs" />
+    <Compile Include="ServiceProvider\EmpiricalProvider.cs" />
+    <Compile Include="ServiceProvider\IndustryProvider.cs" />
+    <Compile Include="ServiceProvider\LevelProvider.cs" />
+    <Compile Include="ServiceProvider\PointsProvider.cs" />
+    <Compile Include="ServiceProvider\SystemAreaProvider.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="attachfiles\industry\095932b3qtox3ntu.png" />
+    <Content Include="attachfiles\industry\095959bz8z48gbx1.png" />
+    <Content Include="attachfiles\industry\100016scnltd223i.png" />
+    <Content Include="attachfiles\industry\100038ab06pg6p52.png" />
+    <Content Include="attachfiles\industry\1001494vdd0erqap.png" />
+    <Content Include="attachfiles\industry\100205zqgalok1kx.png" />
+    <Content Include="attachfiles\industry\100225qwf8pqtnc1.png" />
+    <Content Include="attachfiles\industry\1002370r9m2dtbt8.png" />
+    <Content Include="attachfiles\industry\100254vr0m5i7si7.png" />
+    <Content Include="attachfiles\industry\100325gbrk7jfd8p.png" />
+    <Content Include="attachfiles\industry\100414y411fw44fb.png" />
+    <Content Include="attachfiles\industry\100445ttvkqh1x08.png" />
+    <Content Include="attachfiles\industry\100518tde7iyzecp.png" />
+    <Content Include="attachfiles\industry\100548weiqix9uo7.png" />
+    <Content Include="attachfiles\industry\100557atjhtw6837.png" />
+    <Content Include="attachfiles\industry\10060793kpnqzhot.png" />
+    <Content Include="attachfiles\industry\100621pm5t02epdi.png" />
+    <Content Include="attachfiles\industry\1006360h5wonh8rr.png" />
+    <Content Include="attachfiles\industry\10065177bnrl6rtc.png" />
+    <Content Include="attachfiles\industry\100704b2mduva3ac.png" />
+    <Content Include="attachfiles\industry\1007216d3h71tggd.png" />
+    <Content Include="attachfiles\industry\100900sgujw3inhr.png" />
+    <Content Include="attachfiles\industry\100911hg340m0mlz.png" />
+    <Content Include="attachfiles\industry\100950psp5kzw8hh.png" />
+    <Content Include="attachfiles\industry\101005w2tm0d2q1k.png" />
+    <Content Include="attachfiles\industry\101030l59jehbla5.png" />
+    <Content Include="attachfiles\industry\101042zcgk1shms2.png" />
+    <Content Include="attachfiles\industry\101052c0iyibnos1.png" />
+    <Content Include="attachfiles\industry\101102zdho597qb1.png" />
+    <Content Include="attachfiles\industry\101115h57ionqn9t.png" />
+    <Content Include="attachfiles\industry\101151fsd2wiqgyk.png" />
+    <Content Include="attachfiles\industry\101221w1gap5twnp.png" />
+    <Content Include="attachfiles\industry\1012383smc8ss44c.png" />
+    <Content Include="attachfiles\industry\101340fwucwvco7q.png" />
+    <Content Include="attachfiles\industry\101359kbztgz9yzp.png" />
+    <Content Include="attachfiles\industry\101436uzofszmo09.png" />
+    <Content Include="attachfiles\industry\101536nhgldszbyu.png" />
+    <Content Include="attachfiles\industry\101627vvdvajksaz.png" />
+    <Content Include="attachfiles\industry\101650p5rimuea27.png" />
+    <Content Include="attachfiles\industry\101706u1hzcpbkj7.png" />
+    <Content Include="attachfiles\industry\101836yu35hpaf2h.png" />
+    <Content Include="attachfiles\industry\102006hq62p95zgo.png" />
+    <Content Include="attachfiles\industry\102025pvptntsqpd.png" />
+    <Content Include="attachfiles\industry\102114p2ox39c39r.png" />
+    <Content Include="attachfiles\industry\1021275oth3zfgtw.png" />
+    <Content Include="attachfiles\industry\102211tw1vjt6sw0.png" />
+    <Content Include="attachfiles\industry\102224mvh9yk9xuo.png" />
+    <Content Include="attachfiles\industry\102236v46hrrbwf1.png" />
+    <Content Include="attachfiles\industry\102359olhdlp0f4z.png" />
+    <Content Include="attachfiles\industry\102410wjjgmj21v1.png" />
+    <Content Include="attachfiles\industry\1024542sw14yxwt8.png" />
+    <Content Include="attachfiles\industry\102521ly1cvsazl8.png" />
+    <Content Include="attachfiles\industry\102649y46w2ovxxk.png" />
+    <Content Include="attachfiles\industry\10285597rmc0eu1a.png" />
+    <Content Include="attachfiles\industry\103104zfo3b5nzn8.png" />
+    <Content Include="attachfiles\industry\103146rvplt6l19b.png" />
+    <Content Include="attachfiles\industry\103227sda0oewjci.png" />
+    <Content Include="attachfiles\industry\1032425cw3mnbteu.png" />
+    <Content Include="attachfiles\industry\103307aw1y8kvre2.png" />
+    <Content Include="attachfiles\industry\103321jkbvj5de50.png" />
+    <Content Include="attachfiles\industry\103337ksnda12bfm.png" />
+    <Content Include="attachfiles\industry\1033505w0vsgr8fp.png" />
+    <Content Include="attachfiles\industry\103400mnemvnp09z.png" />
+    <Content Include="attachfiles\industry\1034167dhcs5cmu1.png" />
+    <Content Include="attachfiles\industry\103459croq4uohqw.png" />
+    <Content Include="attachfiles\industry\103509gem9fbzv92.png" />
+    <Content Include="attachfiles\industry\1036310w72vfzuxu.png" />
+    <Content Include="attachfiles\industry\1037165eron3h60f.png" />
+    <Content Include="attachfiles\industry\1037264ff07xi531.png" />
+    <Content Include="attachfiles\industry\103735f31c3rlt91.png" />
+    <Content Include="attachfiles\industry\103743764m7ov633.png" />
+    <Content Include="attachfiles\industry\103756aq5b1x5rfm.png" />
+    <Content Include="attachfiles\industry\103850cdduurdpsg.png" />
+    <Content Include="attachfiles\industry\103853hq1tgvnezb.png" />
+    <Content Include="attachfiles\industry\1039011ppsh8qo67.png" />
+    <Content Include="attachfiles\industry\1039181wbbele72h.png" />
+    <Content Include="attachfiles\industry\103920dsxfjdq8d3.png" />
+    <Content Include="attachfiles\industry\1039313qjx45f2g5.png" />
+    <Content Include="attachfiles\industry\1039378ws4k3vreb.png" />
+    <Content Include="attachfiles\industry\103946tkj9gx3o06.png" />
+    <Content Include="attachfiles\industry\104006gs7mj948ck.png" />
+    <Content Include="attachfiles\industry\104020zxxvtduun1.png" />
+    <Content Include="attachfiles\industry\104022uqmeo4yeq2.png" />
+    <Content Include="attachfiles\industry\1040331snxcqiw42.png" />
+    <Content Include="attachfiles\industry\104038tnqtatqgy9.png" />
+    <Content Include="attachfiles\industry\104051y2s8zl3jyu.png" />
+    <Content Include="attachfiles\industry\104206kb9b09w5e6.png" />
+    <Content Include="attachfiles\industry\104226lsf9m3268w.png" />
+    <Content Include="attachfiles\industry\104245nr0xlk3tqi.png" />
+    <Content Include="attachfiles\industry\104320096pxgkpot.png" />
+    <Content Include="attachfiles\industry\104415ju1xluetyd.png" />
+    <Content Include="attachfiles\industry\1044352x3yz8iqaf.png" />
+    <Content Include="attachfiles\industry\104444iijqi7azsz.png" />
+    <Content Include="attachfiles\industry\104456m30r26n958.png" />
+    <Content Include="attachfiles\industry\104546blnjnkbflk.png" />
+    <Content Include="attachfiles\industry\104557ul3ofiidtj.png" />
+    <Content Include="attachfiles\industry\104648r7fjyu19em.png" />
+    <Content Include="attachfiles\industry\104749lkiqcs8n0y.png" />
+    <Content Include="attachfiles\industry\104808517iqhklke.png" />
+    <Content Include="attachfiles\industry\104825zzo82pd5d3.png" />
+    <Content Include="attachfiles\industry\1048445mqohwhzpb.png" />
+    <Content Include="attachfiles\industry\104945sr2rvwb69j.png" />
+    <Content Include="attachfiles\industry\1050073y7ue00a2o.png" />
+    <Content Include="attachfiles\industry\105027v28g0jfvxq.png" />
+    <Content Include="attachfiles\industry\105346zor4x6dmnh.png" />
+    <Content Include="attachfiles\industry\114620ca9gedfu7m.png" />
+    <Content Include="attachfiles\industry\114725amv40lp8hl.jpg" />
+    <Content Include="attachfiles\industry\140515cbb5uztpqg.png" />
+    <Content Include="attachfiles\industry\1406090tbtjs0ic0.png" />
+    <Content Include="attachfiles\industry\140635hj7p54j8zv.png" />
+    <Content Include="attachfiles\industry\140705wz640bgrtw.png" />
+    <Content Include="attachfiles\industry\140832zhb4zzz3cb.png" />
+    <Content Include="attachfiles\industry\140953cfimxgty7m.png" />
+    <Content Include="attachfiles\industry\141007gtrtd3hd9y.png" />
+    <Content Include="attachfiles\industry\141131h3eafknn5x.png" />
+    <Content Include="attachfiles\industry\141145z7f2jxoqoj.png" />
+    <Content Include="attachfiles\industry\1412249quvbzrmkf.png" />
+    <Content Include="attachfiles\industry\141315rm970tqpjj.png" />
+    <Content Include="attachfiles\industry\141454otxurc0q70.png" />
+    <Content Include="attachfiles\industry\1415202u55609qjr.png" />
+    <Content Include="attachfiles\industry\141607gcrdewowlo.png" />
+    <Content Include="attachfiles\industry\141633w3a8y7hm2f.png" />
+    <Content Include="attachfiles\industry\141706zhp69kav6k.png" />
+    <Content Include="xml\AdPosition.xml" />
+    <Content Include="xml\ApiAuthoriza.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="xml\GlobalConfig.xml" />
+    <Content Include="xml\Industry.xml" />
+    <Content Include="xml\Points.xml" />
+    <Content Include="xml\Empirical.xml" />
+    <Content Include="xml\SystemArea.xml" />
+    <Content Include="xml\TiandaoAdminAccount.xml" />
+    <Content Include="xml\UserLevel.xml" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /e /s /k /v /i /y "$(ProjectDir)xml\*.*" "$(ProjectDir)$(OutDir)\xml\"
+xcopy /e /s /k /v /i /y "$(ProjectDir)attachfiles\*.*" "$(ProjectDir)$(OutDir)\attachfiles\"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

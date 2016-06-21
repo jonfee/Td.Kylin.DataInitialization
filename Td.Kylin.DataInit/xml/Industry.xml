@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <topindustry id="101" name="餐饮美食" icon="img1/industry/101.png" disabled="false" tagstatus="0">
+    <industry id="101101" name="火锅" icon="img1/industry/101101.png" disabled="false" tagstatus="0" />
+    <industry id="101102" name="小吃快餐" icon="img1/industry/101102.png" disabled="false" tagstatus="0" />
+    <industry id="101103" name="烧烤" icon="img1/industry/101103.png" disabled="false" tagstatus="0" />
+    <industry id="101104" name="面包甜点" icon="img1/industry/101104.png" disabled="false" tagstatus="0" />
+    <industry id="101105" name="川菜" icon="img1/industry/101105.png" disabled="false" tagstatus="0" />
+    <industry id="101106" name="自助餐" icon="img1/industry/101106.png" disabled="false" tagstatus="0" />
+    <industry id="101107" name="西餐" icon="img1/industry/101107.png" disabled="false" tagstatus="0" />
+    <industry id="101108" name="韩国料理" icon="img1/industry/101108.png" disabled="false" tagstatus="0" />
+    <industry id="101109" name="日本料理" icon="img1/industry/101109.png" disabled="false" tagstatus="0" />
+    <industry id="101110" name="江浙菜" icon="img1/industry/101110.png" disabled="false" tagstatus="0" />
+    <industry id="101111" name="粤菜" icon="img1/industry/101111.png" disabled="false" tagstatus="0" />
+    <industry id="101112" name="清真菜" icon="img1/industry/101112.png" disabled="false" tagstatus="0" />
+    <industry id="101113" name="湘菜" icon="img1/industry/101113.png" disabled="false" tagstatus="0" />
+    <industry id="101114" name="东北菜" icon="img1/industry/101114.png" disabled="false" tagstatus="0" />
+    <industry id="101115" name="海鲜" icon="img1/industry/101115.png" disabled="false" tagstatus="0" />
+    <industry id="101116" name="其他" icon="img1/industry/101116.png" disabled="false" tagstatus="0" />
+  </topindustry>
+  <topindustry id="102" name="休闲娱乐" icon="img1/industry/102.png" disabled="false" tagstatus="0">
+    <industry id="102101" name="KTV" icon="img1/industry/102101.png" disabled="false" tagstatus="0" />
+    <industry id="102102" name="电影院" icon="img1/industry/102102.png" disabled="false" tagstatus="0" />
+    <industry id="102103" name="运动健身" icon="img1/industry/102103.png" disabled="false" tagstatus="0" />
+    <industry id="102104" name="咖啡厅" icon="img1/industry/102104.png" disabled="false" tagstatus="0" />
+    <industry id="102105" name="酒吧" icon="img1/industry/102105.png" disabled="false" tagstatus="0" />
+    <industry id="102106" name="足疗按摩" icon="img1/industry/102106.png" disabled="false" tagstatus="0" />
+    <industry id="102107" name="洗浴" icon="img1/industry/102107.png" disabled="false" tagstatus="0" />
+    <industry id="102108" name="棋牌室" icon="img1/industry/102108.png" disabled="false" tagstatus="0" />
+    <industry id="102109" name="茶馆" icon="img1/industry/102109.png" disabled="false" tagstatus="0" />
+    <industry id="102110" name="游乐游艺" icon="img1/industry/102110.png" disabled="false" tagstatus="0" />
+    <industry id="102111" name="休闲网吧/网咖" icon="img1/industry/102111.png" disabled="false" tagstatus="0" />
+    <industry id="102112" name="公园" icon="img1/industry/102112.png" disabled="false" tagstatus="0" />
+    <industry id="102113" name="旅行社" icon="img1/industry/102113.png" disabled="false" tagstatus="0" />
+    <industry id="102114" name="采摘/农家乐" icon="img1/industry/102114.png" disabled="false" tagstatus="0" />
+    <industry id="102115" name="中医养生" icon="img1/industry/102115.png" disabled="false" tagstatus="0" />
+    <industry id="102116" name="DIY手工坊" icon="img1/industry/102116.png" disabled="false" tagstatus="0" />
+    <industry id="102117" name="温泉" icon="img1/industry/102117.png" disabled="false" tagstatus="0" />
+    <industry id="102118" name="桌球馆" icon="img1/industry/102118.png" disabled="false" tagstatus="0" />
+    <industry id="102119" name="其他" icon="img1/industry/102119.png" disabled="false" tagstatus="0" />
+  </topindustry>
+  <topindustry id="103" name="丽人" icon="img1/industry/103.png" disabled="false" tagstatus="0">
+    <industry id="103101" name="美发" icon="img1/industry/103101.png" disabled="false" tagstatus="0" />
+    <industry id="103102" name="美容/spa" icon="img1/industry/103102.png" disabled="false" tagstatus="0" />
+    <industry id="103103" name="美甲" icon="img1/industry/103103.png" disabled="false" tagstatus="0" />
+    <industry id="103104" name="瘦身纤体" icon="img1/industry/103104.png" disabled="false" tagstatus="0" />
+    <industry id="103105" name="美瞳" icon="img1/industry/103105.png" disabled="false" tagstatus="0" />
+    <industry id="103106" name="美睫" icon="img1/industry/103106.png" disabled="false" tagstatus="0" />
+    <industry id="103107" name="个性写真" icon="img1/industry/103107.png" disabled="false" tagstatus="0" />
+    <industry id="103108" name="瑜伽" icon="img1/industry/103108.png" disabled="false" tagstatus="0" />
+    <industry id="103109" name="舞蹈" icon="img1/industry/103109.png" disabled="false" tagstatus="0" />
+    <industry id="103110" name="整形" icon="img1/industry/103110.png" disabled="false" tagstatus="0" />
+    <industry id="103111" name="纹身" icon="img1/industry/103111.png" disabled="false" tagstatus="0" />
+    <industry id="103112" name="产后恢复整形" icon="img1/industry/103112.png" disabled="false" tagstatus="0" />
+    <industry id="103113" name="其他" icon="img1/industry/103113.png" disabled="false" tagstatus="0" />
+  </topindustry>
+  <topindustry id="104" name="购物" icon="img1/industry/104.png" disabled="false" tagstatus="0">
+    <industry id="104101" name="超市/便利店" icon="img1/industry/104101.png" disabled="false" tagstatus="0" />
+    <industry id="104102" name="食品茶酒" icon="img1/industry/104102.png" disabled="false" tagstatus="0" />
+    <industry id="104103" name="水果店" icon="img1/industry/104103.png" disabled="false" tagstatus="0" />
+    <industry id="104104" name="综合商场" icon="img1/industry/104104.png" disabled="false" tagstatus="0" />
+    <industry id="104105" name="品牌折扣店" icon="img1/industry/104105.png" disabled="false" tagstatus="0" />
+    <industry id="104106" name="运动户外" icon="img1/industry/104106.png" disabled="false" tagstatus="0" />
+    <industry id="104107" name="服饰鞋包" icon="img1/industry/104107.png" disabled="false" tagstatus="0" />
+    <industry id="104108" name="化妆品" icon="img1/industry/104108.png" disabled="false" tagstatus="0" />
+    <industry id="104109" name="珠宝饰品" icon="img1/industry/104109.png" disabled="false" tagstatus="0" />
+    <industry id="104110" name="办公/文化用品" icon="img1/industry/104110.png" disabled="false" tagstatus="0" />
+    <industry id="104111" name="数码产品" icon="img1/industry/104111.png" disabled="false" tagstatus="0" />
+    <industry id="104112" name="花店" icon="img1/industry/104112.png" disabled="false" tagstatus="0" />
+    <industry id="104113" name="书店" icon="img1/industry/104113.png" disabled="false" tagstatus="0" />
+    <industry id="104114" name="眼镜店" icon="img1/industry/104114.png" disabled="false" tagstatus="0" />
+    <industry id="104115" name="家居建材" icon="img1/industry/104115.png" disabled="false" tagstatus="0" />
+    <industry id="104116" name="蔬菜店" icon="img1/industry/104116.png" disabled="false" tagstatus="0" />
+    <industry id="104117" name="报刊亭" icon="img1/industry/104117.png" disabled="false" tagstatus="0" />
+    <industry id="104118" name="其他" icon="img1/industry/104118.png" disabled="false" tagstatus="0" />
+  </topindustry>
+  <topindustry id="105" name="生活服务" icon="img1/industry/105.png" disabled="false" tagstatus="0">
+    <industry id="105101" name="家政" icon="img1/industry/105101.png" disabled="false" tagstatus="0" />
+    <industry id="105102" name="洗衣店" icon="img1/industry/105102.png" disabled="false" tagstatus="0" />
+    <industry id="105103" name="宠物" icon="img1/industry/105103.png" disabled="false" tagstatus="0" />
+    <industry id="105104" name="快递" icon="img1/industry/105104.png" disabled="false" tagstatus="0" />
+    <industry id="105105" name="送水" icon="img1/industry/105105.png" disabled="false" tagstatus="0" />
+    <industry id="105106" name="家电维修" icon="img1/industry/105106.png" disabled="false" tagstatus="0" />
+    <industry id="105107" name="搬家" icon="img1/industry/105107.png" disabled="false" tagstatus="0" />
+    <industry id="105108" name="房屋维修" icon="img1/industry/105108.png" disabled="false" tagstatus="0" />
+    <industry id="105109" name="保洁" icon="img1/industry/105109.png" disabled="false" tagstatus="0" />
+    <industry id="105110" name="回收" icon="img1/industry/105110.png" disabled="false" tagstatus="0" />
+    <industry id="105111" name="装修设计" icon="img1/industry/105111.png" disabled="false" tagstatus="0" />
+    <industry id="105112" name="公司企业" icon="img1/industry/105112.png" disabled="false" tagstatus="0" />
+    <industry id="105113" name="手机维修" icon="img1/industry/105113.png" disabled="false" tagstatus="0" />
+    <industry id="105114" name="汽车服务" icon="img1/industry/105114.png" disabled="false" tagstatus="0" />
+    <industry id="105115" name="代驾" icon="img1/industry/105115.png" disabled="false" tagstatus="0" />
+    <industry id="105116" name="管道疏通/打孔" icon="img1/industry/105116.png" disabled="false" tagstatus="0" />
+    <industry id="105117" name="装修" icon="img1/industry/105117.png" disabled="false" tagstatus="0" />
+    <industry id="105118" name="开锁换锁" icon="img1/industry/105118.png" disabled="false" tagstatus="0" />
+    <industry id="105119" name="快照/冲印" icon="img1/industry/105119.png" disabled="false" tagstatus="0" />
+    <industry id="105120" name="修鞋擦鞋" icon="img1/industry/105120.png" disabled="false" tagstatus="0" />
+    <industry id="105121" name="裁缝铺" icon="img1/industry/105121.png" disabled="false" tagstatus="0" />
+    <industry id="105122" name="酒店" icon="img1/industry/105122.png" disabled="false" tagstatus="0" />
+    <industry id="105123" name="婚庆策划" icon="img1/industry/105123.png" disabled="false" tagstatus="0" />
+    <industry id="105124" name="货运物流" icon="img1/industry/105124.png" disabled="false" tagstatus="0" />
+    <industry id="105125" name="其他" icon="img1/industry/105125.png" disabled="false" tagstatus="0" />
+  </topindustry>
+  <topindustry id="106" name="公共服务" icon="img1/industry/106.png" disabled="false" tagstatus="0">
+    <industry id="106101" name="居委会/街道办" icon="img1/industry/106101.png" disabled="false" tagstatus="0" />
+    <industry id="106102" name="水/电/燃气/供暖" icon="img1/industry/106102.png" disabled="false" tagstatus="0" />
+    <industry id="106103" name="派出所" icon="img1/industry/106103.png" disabled="false" tagstatus="0" />
+    <industry id="106104" name="医院" icon="img1/industry/106104.png" disabled="false" tagstatus="0" />
+    <industry id="106105" name="诊所" icon="img1/industry/106105.png" disabled="false" tagstatus="0" />
+    <industry id="106106" name="药店" icon="img1/industry/106106.png" disabled="false" tagstatus="0" />
+    <industry id="106107" name="加油站" icon="img1/industry/106107.png" disabled="false" tagstatus="0" />
+    <industry id="106108" name="教育培训" icon="img1/industry/106108.png" disabled="false" tagstatus="0" />
+    <industry id="106109" name="银行" icon="img1/industry/106109.png" disabled="false" tagstatus="0" />
+    <industry id="106110" name="邮政" icon="img1/industry/106110.png" disabled="false" tagstatus="0" />
+    <industry id="106111" name="火车票/飞机票" icon="img1/industry/106111.png" disabled="false" tagstatus="0" />
+    <industry id="106112" name="电信营业厅" icon="img1/industry/106112.png" disabled="false" tagstatus="0" />
+    <industry id="106113" name="其他" icon="img1/industry/106113.png" disabled="false" tagstatus="0" />
+  </topindustry>
+</root>
