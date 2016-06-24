@@ -51,6 +51,21 @@ namespace Td.Kylin.DataInit
         /// 等级规则数据
         /// </summary>
         [Description("等级规则数据")]
-        Level
+        Level,
+        /// <summary>
+        /// 商品分类数据
+        /// </summary>
+        [Description("商品分类数据")]
+        ProductCategory,
+        /// <summary>
+        /// 服务分类数据
+        /// </summary>
+        [Description("服务分类数据")]
+        ServiceCategory,
+        /// <summary>
+        /// 岗位分类数据
+        /// </summary>
+        [Description("岗位分类数据")]
+        JobCategory
     }
 }

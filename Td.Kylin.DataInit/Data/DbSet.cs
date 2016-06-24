@@ -54,5 +54,20 @@ namespace Td.Kylin.DataInit.Data
         /// 广告位
         /// </summary>
         public DbSet<Ad_Position> Ad_Position { get { return Set<Ad_Position>(); } }
+
+        /// <summary>
+        /// 商家服务系统分类
+        /// </summary>
+        public DbSet<Service_SystemCategory> Service_SystemCategory { get { return Set<Service_SystemCategory>(); } }
+
+        /// <summary>
+        /// 产品库分类
+        /// </summary>
+        public DbSet<Library_Category> Library_Category { get { return Set<Library_Category>(); } }
+
+        /// <summary>
+        /// 岗位类型
+        /// </summary>
+        public DbSet<Job_Category> Job_Category { get { return Set<Job_Category>(); } }
     }
 }

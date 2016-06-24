@@ -92,6 +92,27 @@ namespace Td.Kylin.DataInit.Data
                 entity.Property(p => p.PositionID).ValueGeneratedNever();
                 entity.HasKey(p => p.PositionID);
             });
+
+            //服务分类
+            modelBuilder.Entity<Service_SystemCategory>(entity =>
+            {
+                entity.Property(p => p.CategoryID).ValueGeneratedNever();
+                entity.HasKey(p => p.CategoryID);
+            });
+
+            //岗位分类
+            modelBuilder.Entity<Job_Category>(entity =>
+            {
+                entity.Property(p => p.CategoryID).ValueGeneratedNever();
+                entity.HasKey(p => p.CategoryID);
+            });
+
+            //产品库分类
+            modelBuilder.Entity<Library_Category>(entity =>
+            {
+                entity.Property(p => p.CategoryID).ValueGeneratedNever();
+                entity.HasKey(p => p.CategoryID);
+            });
         }
     }
 }

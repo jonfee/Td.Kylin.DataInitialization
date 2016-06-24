@@ -132,7 +132,7 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Td.AspNet.Utils, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Td.AspNet.Utils.1.0.0-rc1-31\lib\net46\Td.AspNet.Utils.dll</HintPath>
+      <HintPath>..\packages\Td.AspNet.Utils.1.0.0-rc1-32\lib\net46\Td.AspNet.Utils.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Td.CoreLibrary, Version=1.1.7.0, Culture=neutral, processorArchitecture=MSIL">
@@ -140,7 +140,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Td.Kylin.Entity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Td.Kylin.Entity.1.0.0-rc1-39\lib\net46\Td.Kylin.Entity.dll</HintPath>
+      <HintPath>..\packages\Td.Kylin.Entity.1.0.0-rc1-43\lib\net46\Td.Kylin.Entity.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Td.Kylin.EnumLibrary, Version=1.0.39.0, Culture=neutral, processorArchitecture=MSIL">
@@ -161,6 +161,9 @@
     <Compile Include="InitServices\ApiAuthorizaInitService.cs" />
     <Compile Include="InitServices\EmpiricalInitService.cs" />
     <Compile Include="InitServices\GlobalConfigInitService.cs" />
+    <Compile Include="InitServices\JobCategoryInitService.cs" />
+    <Compile Include="InitServices\ProductLibraryCategoryInitService.cs" />
+    <Compile Include="InitServices\ServiceCategoryInitService.cs" />
     <Compile Include="ServiceProvider\GlobalConfigProvider.cs" />
     <Compile Include="InitServices\IDataInit.cs" />
     <Compile Include="InitServices\IndustryInitService.cs" />
@@ -185,8 +188,11 @@
     <Compile Include="ServiceProvider\ApiAuthorizeProvider.cs" />
     <Compile Include="ServiceProvider\EmpiricalProvider.cs" />
     <Compile Include="ServiceProvider\IndustryProvider.cs" />
+    <Compile Include="ServiceProvider\JobCategoryProvider.cs" />
     <Compile Include="ServiceProvider\LevelProvider.cs" />
     <Compile Include="ServiceProvider\PointsProvider.cs" />
+    <Compile Include="ServiceProvider\ProductLibraryCategoryProvider.cs" />
+    <Compile Include="ServiceProvider\ServiceCategoryProvider.cs" />
     <Compile Include="ServiceProvider\SystemAreaProvider.cs" />
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -239,12 +245,29 @@
     <Content Include="attachfiles\industry\100900sgujw3inhr.png" />
     <Content Include="attachfiles\industry\100911hg340m0mlz.png" />
     <Content Include="attachfiles\industry\100950psp5kzw8hh.png" />
+    <Content Include="attachfiles\industry\101.png" />
     <Content Include="attachfiles\industry\101005w2tm0d2q1k.png" />
     <Content Include="attachfiles\industry\101030l59jehbla5.png" />
     <Content Include="attachfiles\industry\101042zcgk1shms2.png" />
     <Content Include="attachfiles\industry\101052c0iyibnos1.png" />
+    <Content Include="attachfiles\industry\101101.png" />
+    <Content Include="attachfiles\industry\101102.png" />
     <Content Include="attachfiles\industry\101102zdho597qb1.png" />
+    <Content Include="attachfiles\industry\101103.png" />
+    <Content Include="attachfiles\industry\101104.png" />
+    <Content Include="attachfiles\industry\101105.png" />
+    <Content Include="attachfiles\industry\101106.png" />
+    <Content Include="attachfiles\industry\101107.png" />
+    <Content Include="attachfiles\industry\101108.png" />
+    <Content Include="attachfiles\industry\101109.png" />
+    <Content Include="attachfiles\industry\101110.png" />
+    <Content Include="attachfiles\industry\101111.png" />
+    <Content Include="attachfiles\industry\101112.png" />
+    <Content Include="attachfiles\industry\101113.png" />
+    <Content Include="attachfiles\industry\101114.png" />
+    <Content Include="attachfiles\industry\101115.png" />
     <Content Include="attachfiles\industry\101115h57ionqn9t.png" />
+    <Content Include="attachfiles\industry\101116.png" />
     <Content Include="attachfiles\industry\101151fsd2wiqgyk.png" />
     <Content Include="attachfiles\industry\101221w1gap5twnp.png" />
     <Content Include="attachfiles\industry\1012383smc8ss44c.png" />
@@ -256,9 +279,29 @@
     <Content Include="attachfiles\industry\101650p5rimuea27.png" />
     <Content Include="attachfiles\industry\101706u1hzcpbkj7.png" />
     <Content Include="attachfiles\industry\101836yu35hpaf2h.png" />
+    <Content Include="attachfiles\industry\102.png" />
     <Content Include="attachfiles\industry\102006hq62p95zgo.png" />
     <Content Include="attachfiles\industry\102025pvptntsqpd.png" />
+    <Content Include="attachfiles\industry\102101.png" />
+    <Content Include="attachfiles\industry\102102.png" />
+    <Content Include="attachfiles\industry\102103.png" />
+    <Content Include="attachfiles\industry\102104.png" />
+    <Content Include="attachfiles\industry\102105.png" />
+    <Content Include="attachfiles\industry\102106.png" />
+    <Content Include="attachfiles\industry\102107.png" />
+    <Content Include="attachfiles\industry\102108.png" />
+    <Content Include="attachfiles\industry\102110.png" />
+    <Content Include="attachfiles\industry\102111.png" />
+    <Content Include="attachfiles\industry\102112.png" />
+    <Content Include="attachfiles\industry\102112_99.png" />
+    <Content Include="attachfiles\industry\102113.png" />
+    <Content Include="attachfiles\industry\102114.png" />
     <Content Include="attachfiles\industry\102114p2ox39c39r.png" />
+    <Content Include="attachfiles\industry\102115.png" />
+    <Content Include="attachfiles\industry\102116.png" />
+    <Content Include="attachfiles\industry\102117.png" />
+    <Content Include="attachfiles\industry\102118.png" />
+    <Content Include="attachfiles\industry\102119.png" />
     <Content Include="attachfiles\industry\1021275oth3zfgtw.png" />
     <Content Include="attachfiles\industry\102211tw1vjt6sw0.png" />
     <Content Include="attachfiles\industry\102224mvh9yk9xuo.png" />
@@ -269,7 +312,21 @@
     <Content Include="attachfiles\industry\102521ly1cvsazl8.png" />
     <Content Include="attachfiles\industry\102649y46w2ovxxk.png" />
     <Content Include="attachfiles\industry\10285597rmc0eu1a.png" />
+    <Content Include="attachfiles\industry\103.png" />
+    <Content Include="attachfiles\industry\103101.png" />
+    <Content Include="attachfiles\industry\103102.png" />
+    <Content Include="attachfiles\industry\103103.png" />
+    <Content Include="attachfiles\industry\103104.png" />
     <Content Include="attachfiles\industry\103104zfo3b5nzn8.png" />
+    <Content Include="attachfiles\industry\103105.png" />
+    <Content Include="attachfiles\industry\103105_58.png" />
+    <Content Include="attachfiles\industry\103107.png" />
+    <Content Include="attachfiles\industry\103108.png" />
+    <Content Include="attachfiles\industry\103109.png" />
+    <Content Include="attachfiles\industry\103110.png" />
+    <Content Include="attachfiles\industry\103111.png" />
+    <Content Include="attachfiles\industry\103112.png" />
+    <Content Include="attachfiles\industry\103113.png" />
     <Content Include="attachfiles\industry\103146rvplt6l19b.png" />
     <Content Include="attachfiles\industry\103227sda0oewjci.png" />
     <Content Include="attachfiles\industry\1032425cw3mnbteu.png" />
@@ -295,12 +352,33 @@
     <Content Include="attachfiles\industry\1039313qjx45f2g5.png" />
     <Content Include="attachfiles\industry\1039378ws4k3vreb.png" />
     <Content Include="attachfiles\industry\103946tkj9gx3o06.png" />
+    <Content Include="attachfiles\industry\104.png" />
     <Content Include="attachfiles\industry\104006gs7mj948ck.png" />
     <Content Include="attachfiles\industry\104020zxxvtduun1.png" />
     <Content Include="attachfiles\industry\104022uqmeo4yeq2.png" />
     <Content Include="attachfiles\industry\1040331snxcqiw42.png" />
     <Content Include="attachfiles\industry\104038tnqtatqgy9.png" />
     <Content Include="attachfiles\industry\104051y2s8zl3jyu.png" />
+    <Content Include="attachfiles\industry\104101.png" />
+    <Content Include="attachfiles\industry\104102.png" />
+    <Content Include="attachfiles\industry\104103.png" />
+    <Content Include="attachfiles\industry\104104.png" />
+    <Content Include="attachfiles\industry\104105.png" />
+    <Content Include="attachfiles\industry\104106.png" />
+    <Content Include="attachfiles\industry\104107.png" />
+    <Content Include="attachfiles\industry\104108.png" />
+    <Content Include="attachfiles\industry\104109.png" />
+    <Content Include="attachfiles\industry\104110.png" />
+    <Content Include="attachfiles\industry\104111.png" />
+    <Content Include="attachfiles\industry\104112.png" />
+    <Content Include="attachfiles\industry\104113.png" />
+    <Content Include="attachfiles\industry\104114.png" />
+    <Content Include="attachfiles\industry\104115.png" />
+    <Content Include="attachfiles\industry\104116.png" />
+    <Content Include="attachfiles\industry\104117.png" />
+    <Content Include="attachfiles\industry\104118.png" />
+    <Content Include="attachfiles\industry\104118_4.png" />
+    <Content Include="attachfiles\industry\104118_99.png" />
     <Content Include="attachfiles\industry\104206kb9b09w5e6.png" />
     <Content Include="attachfiles\industry\104226lsf9m3268w.png" />
     <Content Include="attachfiles\industry\104245nr0xlk3tqi.png" />
@@ -317,9 +395,47 @@
     <Content Include="attachfiles\industry\104825zzo82pd5d3.png" />
     <Content Include="attachfiles\industry\1048445mqohwhzpb.png" />
     <Content Include="attachfiles\industry\104945sr2rvwb69j.png" />
+    <Content Include="attachfiles\industry\105.png" />
     <Content Include="attachfiles\industry\1050073y7ue00a2o.png" />
     <Content Include="attachfiles\industry\105027v28g0jfvxq.png" />
+    <Content Include="attachfiles\industry\105101.png" />
+    <Content Include="attachfiles\industry\105102.png" />
+    <Content Include="attachfiles\industry\105103.png" />
+    <Content Include="attachfiles\industry\105104.png" />
+    <Content Include="attachfiles\industry\105105.png" />
+    <Content Include="attachfiles\industry\105106.png" />
+    <Content Include="attachfiles\industry\105107.png" />
+    <Content Include="attachfiles\industry\105108.png" />
+    <Content Include="attachfiles\industry\105109.png" />
+    <Content Include="attachfiles\industry\105110.png" />
+    <Content Include="attachfiles\industry\105111.png" />
+    <Content Include="attachfiles\industry\105112.png" />
+    <Content Include="attachfiles\industry\105113.png" />
+    <Content Include="attachfiles\industry\105114.png" />
+    <Content Include="attachfiles\industry\105115.png" />
+    <Content Include="attachfiles\industry\105116.png" />
+    <Content Include="attachfiles\industry\105117.png" />
+    <Content Include="attachfiles\industry\105118.png" />
+    <Content Include="attachfiles\industry\105119.png" />
+    <Content Include="attachfiles\industry\105120.png" />
+    <Content Include="attachfiles\industry\105121.png" />
+    <Content Include="attachfiles\industry\105122.png" />
+    <Content Include="attachfiles\industry\105123.png" />
+    <Content Include="attachfiles\industry\105125.png" />
     <Content Include="attachfiles\industry\105346zor4x6dmnh.png" />
+    <Content Include="attachfiles\industry\106.png" />
+    <Content Include="attachfiles\industry\106102.png" />
+    <Content Include="attachfiles\industry\106103.png" />
+    <Content Include="attachfiles\industry\106104.png" />
+    <Content Include="attachfiles\industry\106105.png" />
+    <Content Include="attachfiles\industry\106106.png" />
+    <Content Include="attachfiles\industry\106107.png" />
+    <Content Include="attachfiles\industry\106108.png" />
+    <Content Include="attachfiles\industry\106109.png" />
+    <Content Include="attachfiles\industry\106110.png" />
+    <Content Include="attachfiles\industry\106111.png" />
+    <Content Include="attachfiles\industry\106112.png" />
+    <Content Include="attachfiles\industry\106113.png" />
     <Content Include="attachfiles\industry\114620ca9gedfu7m.png" />
     <Content Include="attachfiles\industry\114725amv40lp8hl.jpg" />
     <Content Include="attachfiles\industry\140515cbb5uztpqg.png" />
@@ -344,8 +460,15 @@
     </Content>
     <Content Include="xml\GlobalConfig.xml" />
     <Content Include="xml\Industry.xml" />
+    <Content Include="xml\JobCategory.xml" />
     <Content Include="xml\Points.xml" />
     <Content Include="xml\Empirical.xml" />
+    <Content Include="xml\ProductLibraryCategory.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="xml\ServiceCategory.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="xml\SystemArea.xml" />
     <Content Include="xml\TiandaoAdminAccount.xml" />
     <Content Include="xml\UserLevel.xml" />

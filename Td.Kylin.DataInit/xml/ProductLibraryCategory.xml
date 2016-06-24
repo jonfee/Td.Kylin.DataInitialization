@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <topcategory id="101" name="进口商品" icon="" disabled="false" depth="1" description="">
+    <category id="101101" name="进口美护" icon="" disabled="false" depth="2" description=""></category>
+    <category id="101102" name="进口牛奶" icon="" disabled="false" depth="2" description=""></category>
+    <category id="101103" name="进口水果" icon="" disabled="false" depth="2" description=""></category>
+    <category id="101104" name="时鲜蔬菜" icon="" disabled="false" depth="2" description=""></category>
+    <category id="101105" name="肉类禽蛋" icon="" disabled="false" depth="2" description=""></category>
+    <category id="101106" name="海鲜水产" icon="" disabled="false" depth="2" description=""></category>
+    <category id="101107" name="糖果零食" icon="" disabled="false" depth="2" description=""></category>
+    <category id="101108" name="茶酒饮料" icon="" disabled="false" depth="2" description=""></category>
+    <category id="101109" name="日用百货" icon="" disabled="false" depth="2" description=""></category>
+  </topcategory>
+  <topcategory id="102" name="零食特产" icon="" disabled="false" depth="1" description="">
+    <category id="102101" name="糖果甜食" icon="" disabled="false" depth="2" description=""></category>
+    <category id="102102" name="肉类小吃" icon="" disabled="false" depth="2" description=""></category>
+    <category id="102103" name="果干蜜饯" icon="" disabled="false" depth="2" description=""></category>
+    <category id="102104" name="坚果炒货" icon="" disabled="false" depth="2" description=""></category>
+    <category id="102105" name="薯片膨化" icon="" disabled="false" depth="2" description=""></category>
+    <category id="102106" name="海味零售" icon="" disabled="false" depth="2" description=""></category>
+    <category id="102107" name="饼干糕点" icon="" disabled="false" depth="2" description=""></category>
+  </topcategory>
+  <topcategory id="103" name="茶酒饮料" icon="" disabled="false" depth="1" description="">
+    <category id="103101" name="茶叶" icon="" disabled="false" depth="2" description=""></category>
+    <category id="103102" name="奶茶咖啡" icon="" disabled="false" depth="2" description=""></category>
+    <category id="103103" name="果汁饮料" icon="" disabled="false" depth="2" description=""></category>
+    <category id="103104" name="牛奶乳品" icon="" disabled="false" depth="2" description=""></category>
+    <category id="103105" name="冲饮" icon="" disabled="false" depth="2" description=""></category>
+    <category id="103106" name="白酒" icon="" disabled="false" depth="2" description=""></category>
+    <category id="103107" name="葡萄酒" icon="" disabled="false" depth="2" description=""></category>
+    <category id="103108" name="啤酒" icon="" disabled="false" depth="2" description=""></category>
+    <category id="103109" name="洋酒" icon="" disabled="false" depth="2" description=""></category>
+    <category id="103110" name="黄酒" icon="" disabled="false" depth="2" description=""></category>
+    <category id="103111" name="其它酒类" icon="" disabled="false" depth="2" description=""></category>
+  </topcategory>
+  <topcategory id="104" name="生鲜水果" icon="" disabled="false" depth="1" description="">
+    <category id="104101" name="新鲜水果" icon="" disabled="false" depth="2" description=""></category>
+    <category id="104102" name="新鲜蔬菜" icon="" disabled="false" depth="2" description=""></category>
+    <category id="104103" name="家禽蛋类" icon="" disabled="false" depth="2" description=""></category>
+    <category id="104104" name="海鲜水产" icon="" disabled="false" depth="2" description=""></category>
+    <category id="104105" name="牛羊猪肉" icon="" disabled="false" depth="2" description=""></category>
+    <category id="104106" name="速冻食品" icon="" disabled="false" depth="2" description=""></category>
+  </topcategory>
+  <topcategory id="105" name="粮油米面" icon="" disabled="false" depth="1" description="">
+    <category id="105101" name="方便速食" icon="" disabled="false" depth="2" description=""></category>
+    <category id="105102" name="大米面粉" icon="" disabled="false" depth="2" description=""></category>
+    <category id="105103" name="菌菇干货" icon="" disabled="false" depth="2" description=""></category>
+    <category id="105104" name="油盐调味" icon="" disabled="false" depth="2" description=""></category>
+    <category id="105105" name="健康粗粮" icon="" disabled="false" depth="2" description=""></category>
+    <category id="105106" name="地方美食" icon="" disabled="false" depth="2" description=""></category>    
+  </topcategory>
+  <topcategory id="106" name="母婴专区" icon="" disabled="false" depth="1" description="">
+    <category id="106101" name="孕妈专区" icon="" disabled="false" depth="2" description=""></category>
+    <category id="106102" name="宝宝家纺" icon="" disabled="false" depth="2" description=""></category>
+    <category id="106103" name="奶粉辅食" icon="" disabled="false" depth="2" description=""></category>
+    <category id="106104" name="洗浴健康" icon="" disabled="false" depth="2" description=""></category>
+    <category id="106105" name="母婴喂养" icon="" disabled="false" depth="2" description=""></category>
+    <category id="106106" name="玩具图书" icon="" disabled="false" depth="2" description=""></category>
+    <category id="106107" name="尿裤湿巾" icon="" disabled="false" depth="2" description=""></category>
+    <category id="106108" name="婴儿服饰" icon="" disabled="false" depth="2" description=""></category>
+  </topcategory>
+  <topcategory id="107" name="居家日用" icon="" disabled="false" depth="1" description="">
+    <category id="107101" name="床上用品" icon="" disabled="false" depth="2" description=""></category>
+    <category id="107102" name="厨具锅具" icon="" disabled="false" depth="2" description=""></category>
+    <category id="107103" name="洗晒收纳" icon="" disabled="false" depth="2" description=""></category>
+    <category id="107104" name="家用五金" icon="" disabled="false" depth="2" description=""></category>
+    <category id="107105" name="一次性用品" icon="" disabled="false" depth="2" description=""></category>
+    <category id="107106" name="宠物用品" icon="" disabled="false" depth="2" description=""></category>
+  </topcategory>
+  <topcategory id="108" name="办公文体" icon="" disabled="false" depth="1" description="">
+    <category id="108101" name="剪裁装订" icon="" disabled="false" depth="2" description=""></category>
+    <category id="108102" name="收纳陈列" icon="" disabled="false" depth="2" description=""></category>
+    <category id="108103" name="财会专用" icon="" disabled="false" depth="2" description=""></category>
+    <category id="108104" name="学生文具" icon="" disabled="false" depth="2" description=""></category>
+    <category id="108105" name="办公设备" icon="" disabled="false" depth="2" description=""></category>
+  </topcategory>
+  <topcategory id="109" name="清洁洗涤" icon="" disabled="false" depth="1" description="">
+    <category id="109101" name="衣物清洁" icon="" disabled="false" depth="2" description=""></category>
+    <category id="109102" name="家庭清洁" icon="" disabled="false" depth="2" description=""></category>
+    <category id="109103" name="干燥除臭" icon="" disabled="false" depth="2" description=""></category>
+    <category id="109104" name="皮具护理" icon="" disabled="false" depth="2" description=""></category>
+    <category id="109105" name="鞋用品" icon="" disabled="false" depth="2" description=""></category>
+  </topcategory>
+  <topcategory id="110" name="洗护美妆" icon="" disabled="false" depth="1" description="">
+    <category id="110101" name="纸品湿巾" icon="" disabled="false" depth="2" description=""></category>
+    <category id="110102" name="个人清洁" icon="" disabled="false" depth="2" description=""></category>
+    <category id="110103" name="男士护理" icon="" disabled="false" depth="2" description=""></category>
+    <category id="110104" name="女士护理" icon="" disabled="false" depth="2" description=""></category>
+    <category id="110105" name="口腔护理" icon="" disabled="false" depth="2" description=""></category>
+    <category id="110106" name="精致彩妆" icon="" disabled="false" depth="2" description=""></category>
+    <category id="110107" name="洗发护发" icon="" disabled="false" depth="2" description=""></category>
+    <category id="110108" name="面部护理" icon="" disabled="false" depth="2" description=""></category>
+  </topcategory>
+  <topcategory id="111" name="成人保健" icon="" disabled="false" depth="1" description="">
+    <category id="111101" name="情趣用品" icon="" disabled="false" depth="2" description=""></category>
+    <category id="111102" name="避孕套" icon="" disabled="false" depth="2" description=""></category>
+    <category id="111103" name="男用器具" icon="" disabled="false" depth="2" description=""></category>
+    <category id="111104" name="女用器具" icon="" disabled="false" depth="2" description=""></category>
+  </topcategory>
+  <topcategory id="112" name="运动健身" icon="" disabled="false" depth="1" description="">
+    <category id="112101" name="健身器材" icon="" disabled="false" depth="2" description=""></category>
+    <category id="112102" name="骑行野营" icon="" disabled="false" depth="2" description=""></category>
+    <category id="112103" name="家居休闲" icon="" disabled="false" depth="2" description=""></category>
+    <category id="112104" name="运动装备" icon="" disabled="false" depth="2" description=""></category>
+    <category id="112105" name="运动鞋" icon="" disabled="false" depth="2" description=""></category>
+  </topcategory>
+  <topcategory id="113" name="鞋包装饰" icon="" disabled="false" depth="1" description="">
+    <category id="113101" name="钟表眼镜" icon="" disabled="false" depth="2" description=""></category>
+    <category id="113102" name="钱包皮具" icon="" disabled="false" depth="2" description=""></category>
+    <category id="113103" name="珠宝饰品" icon="" disabled="false" depth="2" description=""></category>
+    <category id="113104" name="功能箱包" icon="" disabled="false" depth="2" description=""></category>
+    <category id="113105" name="男鞋" icon="" disabled="false" depth="2" description=""></category>
+    <category id="113106" name="女鞋" icon="" disabled="false" depth="2" description=""></category>
+  </topcategory>
+  <topcategory id="114" name="电脑电器" icon="" disabled="false" depth="1" description="">
+    <category id="114101" name="生活电器" icon="" disabled="false" depth="2" description=""></category>
+    <category id="114102" name="厨味电器" icon="" disabled="false" depth="2" description=""></category>
+    <category id="114103" name="个护健康" icon="" disabled="false" depth="2" description=""></category>
+    <category id="114104" name="大家电" icon="" disabled="false" depth="2" description=""></category>
+    <category id="114105" name="小家电" icon="" disabled="false" depth="2" description=""></category>
+    <category id="114106" name="手机数码" icon="" disabled="false" depth="2" description=""></category>
+    <category id="114107" name="数码配件" icon="" disabled="false" depth="2" description=""></category>
+    <category id="114108" name="网络电脑" icon="" disabled="false" depth="2" description=""></category>
+    <category id="114109" name="电脑配件" icon="" disabled="false" depth="2" description=""></category>
+    <category id="114110" name="汽车周边" icon="" disabled="false" depth="2" description=""></category>
+  </topcategory>
+  <topcategory id="115" name="营养滋补" icon="" disabled="false" depth="1" description="">
+    <category id="115101" name="传统滋补" icon="" disabled="false" depth="2" description=""></category>
+    <category id="115102" name="健康服务" icon="" disabled="false" depth="2" description=""></category>
+    <category id="115103" name="保健食品" icon="" disabled="false" depth="2" description=""></category>
+    <category id="115104" name="营养健康" icon="" disabled="false" depth="2" description=""></category>
+    <category id="115105" name="家用器械" icon="" disabled="false" depth="2" description=""></category>
+    <category id="115106" name="常备药品" icon="" disabled="false" depth="2" description=""></category>
+  </topcategory>
+  <topcategory id="116" name="周边服务" icon="" disabled="false" depth="1" description="">
+    <category id="116101" name="鲜花速递" icon="" disabled="false" depth="2" description=""></category>
+    <category id="116102" name="酒店入住" icon="" disabled="false" depth="2" description=""></category>
+    <category id="116103" name="旅游服务" icon="" disabled="false" depth="2" description=""></category>
+    <category id="116104" name="创意礼品" icon="" disabled="false" depth="2" description=""></category>
+    <category id="116105" name="节日礼品" icon="" disabled="false" depth="2" description=""></category>
+  </topcategory>
+</root>

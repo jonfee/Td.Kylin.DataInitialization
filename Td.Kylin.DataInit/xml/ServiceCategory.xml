@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <topcategory id="201" name="家政" icon="" isdisabled="false">
+    <category id="201101" name="月嫂" icon="" isdisabled="false"></category>
+    <category id="201102" name="育儿嫂" icon="" isdisabled="false"></category>
+    <category id="201103" name="老人陪护" icon="" isdisabled="false"></category>
+    <category id="201104" name="保姆" icon="" isdisabled="false"></category>
+    <category id="201105" name="病患陪护" icon="" isdisabled="false"></category>
+    <category id="201106" name="长期钟点工" icon="" isdisabled="false"></category>
+    <category id="201999" name="其它" icon="" isdisabled="false"></category>
+  </topcategory>
+  <topcategory id="202" name="洗护" icon="" isdisabled="false">
+    <category id="202101" name="洗衣" icon="" isdisabled="false"></category>
+    <category id="202102" name="洗鞋" icon="" isdisabled="false"></category>
+    <category id="202103" name="居家用品" icon="" isdisabled="false"></category>
+    <category id="202104" name="奢侈品洗护" icon="" isdisabled="false"></category>
+    <category id="202999" name="其它" icon="" isdisabled="false"></category>
+  </topcategory>
+  <topcategory id="203" name="宠物" icon="" isdisabled="false">
+    <category id="203101" name="宠物美容" icon="" isdisabled="false"></category>
+    <category id="203102" name="宠物寄养" icon="" isdisabled="false"></category>
+    <category id="203103" name="宠物销售" icon="" isdisabled="false"></category>
+    <category id="203104" name="宠物医疗" icon="" isdisabled="false"></category>
+    <category id="203105" name="宠物摄影" icon="" isdisabled="false"></category>
+    <category id="203999" name="其它" icon="" isdisabled="false"></category>
+  </topcategory>
+  <topcategory id="204" name="家电维修" icon="" isdisabled="false">
+    <category id="204101" name="电视维修" icon="" isdisabled="false"></category>
+    <category id="204102" name="冰箱维修" icon="" isdisabled="false"></category>
+    <category id="204103" name="空调维修" icon="" isdisabled="false"></category>
+    <category id="204104" name="燃气灶维修" icon="" isdisabled="false"></category>
+    <category id="204105" name="油烟机维修" icon="" isdisabled="false"></category>
+    <category id="204106" name="电脑维修" icon="" isdisabled="false"></category>
+    <category id="204107" name="热水器维修" icon="" isdisabled="false"></category>
+    <category id="204108" name="吸尘器维修" icon="" isdisabled="false"></category>
+    <category id="204109" name="电磁炉维修" icon="" isdisabled="false"></category>
+    <category id="204110" name="电饭锅维修" icon="" isdisabled="false"></category>
+    <category id="204111" name="音响维修" icon="" isdisabled="false"></category>
+    <category id="204999" name="其它" icon="" isdisabled="false"></category>
+  </topcategory>
+  <topcategory id="205" name="搬家" icon="" isdisabled="false">
+    <category id="205101" name="居民搬家" icon="" isdisabled="false"></category>
+    <category id="205102" name="空调拆装维修" icon="" isdisabled="false"></category>
+    <category id="205103" name="办公室搬迁" icon="" isdisabled="false"></category>
+    <category id="205104" name="厂房搬迁" icon="" isdisabled="false"></category>
+    <category id="205105" name="吊装服务" icon="" isdisabled="false"></category>
+    <category id="205106" name="长途搬迁" icon="" isdisabled="false"></category>
+    <category id="205999" name="其它" icon="" isdisabled="false"></category>
+  </topcategory>
+  <topcategory id="206" name="房屋维修" icon="" isdisabled="false">
+    <category id="206101" name="屋面防水补漏" icon="" isdisabled="false"></category>
+    <category id="206102" name="外墙防水防潮" icon="" isdisabled="false"></category>
+    <category id="206103" name="家庭防水补漏" icon="" isdisabled="false"></category>
+    <category id="206999" name="其它" icon="" isdisabled="false"></category>
+  </topcategory>
+  <topcategory id="207" name="保洁" icon="" isdisabled="false">
+    <category id="207101" name="日常保洁" icon="" isdisabled="false"></category>
+    <category id="207102" name="油烟机清洗" icon="" isdisabled="false"></category>
+    <category id="207103" name="空调服务" icon="" isdisabled="false"></category>
+    <category id="207999" name="其它" icon="" isdisabled="false"></category>
+  </topcategory>
+  <topcategory id="208" name="回收" icon="" isdisabled="false">
+    <category id="208101" name="电脑回收" icon="" isdisabled="false"></category>
+    <category id="208102" name="家用电器回收" icon="" isdisabled="false"></category>
+    <category id="208103" name="家具装饰回收" icon="" isdisabled="false"></category>
+    <category id="208104" name="二手设备回收" icon="" isdisabled="false"></category>
+    <category id="208105" name="废旧物品回收" icon="" isdisabled="false"></category>
+    <category id="208106" name="金属回收" icon="" isdisabled="false"></category>
+    <category id="208107" name="礼品回收" icon="" isdisabled="false"></category>
+    <category id="208108" name="建筑废料回收" icon="" isdisabled="false"></category>
+    <category id="208109" name="衣物回收" icon="" isdisabled="false"></category>
+    <category id="208999" name="其它" icon="" isdisabled="false"></category>
+  </topcategory>
+  <topcategory id="209" name="汽车服务" icon="" isdisabled="false">
+    <category id="209101" name="到店洗车" icon="" isdisabled="false"></category>
+    <category id="209102" name="汽车保养" icon="" isdisabled="false"></category>
+    <category id="209103" name="汽车美容" icon="" isdisabled="false"></category>
+    <category id="209104" name="汽车维修" icon="" isdisabled="false"></category>
+    <category id="209105" name="汽车轮胎" icon="" isdisabled="false"></category>
+    <category id="209106" name="汽车改装" icon="" isdisabled="false"></category>
+    <category id="209107" name="汽车救援" icon="" isdisabled="false"></category>
+    <category id="209999" name="其它" icon="" isdisabled="false"></category>
+  </topcategory>
+  <topcategory id="210" name="代驾" icon="" isdisabled="false">
+    <category id="210101" name="商务代驾" icon="" isdisabled="false"></category>
+    <category id="210102" name="长途代驾" icon="" isdisabled="false"></category>
+    <category id="210103" name="酒后代驾" icon="" isdisabled="false"></category>
+    <category id="210104" name="汽车陪练" icon="" isdisabled="false"></category>
+    <category id="210999" name="其它" icon="" isdisabled="false"></category>
+  </topcategory>
+  <topcategory id="211" name="管道疏通" icon="" isdisabled="false">
+    <category id="211101" name="疏通下水道" icon="" isdisabled="false"></category>
+    <category id="211102" name="疏通马桶" icon="" isdisabled="false"></category>
+    <category id="211103" name="疏通地漏" icon="" isdisabled="false"></category>
+    <category id="211104" name="疏通蹲坑" icon="" isdisabled="false"></category>
+    <category id="211105" name="管道清洗" icon="" isdisabled="false"></category>
+    <category id="211106" name="清理化粪池" icon="" isdisabled="false"></category>
+    <category id="211107" name="管道安装" icon="" isdisabled="false"></category>
+    <category id="211108" name="马桶维修" icon="" isdisabled="false"></category>
+    <category id="211999" name="其它" icon="" isdisabled="false"></category>
+  </topcategory>
+  <topcategory id="212" name="装修" icon="" isdisabled="false">
+    <category id="212101" name="旧房翻新" icon="" isdisabled="false"></category>
+    <category id="212102" name="工装" icon="" isdisabled="false"></category>
+    <category id="212103" name="简装" icon="" isdisabled="false"></category>
+    <category id="212104" name="精装" icon="" isdisabled="false"></category>
+    <category id="212105" name="奢装" icon="" isdisabled="false"></category>
+    <category id="212999" name="其它" icon="" isdisabled="false"></category>
+  </topcategory>
+  <topcategory id="213" name="开锁换锁" icon="" isdisabled="false">
+    <category id="213101" name="开锁" icon="" isdisabled="false"></category>
+    <category id="213102" name="换锁" icon="" isdisabled="false"></category>
+    <category id="213999" name="其它" icon="" isdisabled="false"></category>
+  </topcategory>
+  <topcategory id="214" name="修鞋擦鞋" icon="" isdisabled="false">
+    <category id="214101" name="修鞋" icon="" isdisabled="false"></category>
+    <category id="214102" name="擦鞋" icon="" isdisabled="false"></category>
+    <category id="214999" name="其它" icon="" isdisabled="false"></category>
+  </topcategory>
+  <topcategory id="215" name="裁缝铺" icon="" isdisabled="false">
+    <category id="215101" name="改衣改腰" icon="" isdisabled="false"></category>
+    <category id="215102" name="普通缝补" icon="" isdisabled="false"></category>
+    <category id="215103" name="成衣定制" icon="" isdisabled="false"></category>
+    <category id="215104" name="皮鞋定制" icon="" isdisabled="false"></category>
+    <category id="215105" name="私人订制" icon="" isdisabled="false"></category>
+    <category id="215999" name="其它" icon="" isdisabled="false"></category>
+  </topcategory>
+  <topcategory id="216" name="婚庆策划" icon="" isdisabled="false">
+    <category id="216101" name="婚纱摄影" icon="" isdisabled="false"></category>
+    <category id="216102" name="婚礼跟拍" icon="" isdisabled="false"></category>
+    <category id="216103" name="婚庆布置" icon="" isdisabled="false"></category>
+    <category id="216104" name="婚庆司仪" icon="" isdisabled="false"></category>
+    <category id="216105" name="婚车租赁" icon="" isdisabled="false"></category>
+    <category id="216106" name="礼服租赁" icon="" isdisabled="false"></category>
+    <category id="216107" name="婚礼道具" icon="" isdisabled="false"></category>
+    <category id="2106999" name="其它" icon="" isdisabled="false"></category>
+  </topcategory>
+  <topcategory id="217" name="货运物流" icon="" isdisabled="false">
+    <category id="217101" name="轿车托运" icon="" isdisabled="false"></category>
+    <category id="217102" name="长途行李托运" icon="" isdisabled="false"></category>
+    <category id="217103" name="长途搬家" icon="" isdisabled="false"></category>
+    <category id="217104" name="公路运输" icon="" isdisabled="false"></category>
+    <category id="217105" name="铁路运输" icon="" isdisabled="false"></category>
+    <category id="217999" name="其它" icon="" isdisabled="false"></category>
+  </topcategory>
+</root>

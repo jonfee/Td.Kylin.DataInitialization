@@ -78,48 +78,7 @@ namespace Td.Kylin.DataInit
         {
             UpdateDBConnection();
 
-            string combValue = this.combInitType.SelectedValue.ToString();
-
-            if (combValue == "0")
-            {
-                MessageBox.Show("请选择要初始化的数据类型");
-                return;
-            }
-
-            DataInitType initType = (DataInitType)Enum.Parse(typeof(DataInitType), combValue);
-
-            IDataInit service = null;
-
-            switch (initType)
-            {
-                case DataInitType.AdPosition:
-                    service = new ADPositionInitService();
-                    break;
-                case DataInitType.ApiAuthoriza:
-                    service = new ApiAuthorizaInitService();
-                    break;
-                case DataInitType.AreaCity:
-                    service = new SystemAreaInitService();
-                    break;
-                case DataInitType.DefaultTianDaoAdminAccount:
-                    service = new AdminAccountInitService();
-                    break;
-                case DataInitType.Empirical:
-                    service = new EmpiricalInitService();
-                    break;
-                case DataInitType.GlobalConfig:
-                    service = new GlobalConfigInitService();
-                    break;
-                case DataInitType.Industry:
-                    service = new IndustryInitService();
-                    break;
-                case DataInitType.Level:
-                    service = new UserLevelInitService();
-                    break;
-                case DataInitType.Points:
-                    service = new PointsInitService();
-                    break;
-            }
+            IDataInit service = GetService();
 
             if (null != service)
             {
@@ -136,12 +95,26 @@ namespace Td.Kylin.DataInit
         {
             UpdateDBConnection();
 
+            IDataInit service = GetService();
+
+            if (null != service)
+            {
+                service.Download();
+            }
+        }
+
+        /// <summary>
+        /// 获取服务
+        /// </summary>
+        /// <returns></returns>
+        private IDataInit GetService()
+        {
             string combValue = this.combInitType.SelectedValue.ToString();
 
             if (combValue == "0")
             {
-                MessageBox.Show("请选择要下载的数据类型");
-                return;
+                MessageBox.Show("请选择要操作的数据类型");
+                return null;
             }
 
             DataInitType initType = (DataInitType)Enum.Parse(typeof(DataInitType), combValue);
@@ -177,12 +150,18 @@ namespace Td.Kylin.DataInit
                 case DataInitType.Points:
                     service = new PointsInitService();
                     break;
+                case DataInitType.ServiceCategory:
+                    service = new ServiceCategoryInitService();
+                    break;
+                case DataInitType.ProductCategory:
+                    service = new ProductLibraryCategoryInitService();
+                    break;
+                case DataInitType.JobCategory:
+                    service = new JobCategoryInitService();
+                    break;
             }
 
-            if (null != service)
-            {
-                service.Download();
-            }
+            return service;
         }
 
         /// <summary>
