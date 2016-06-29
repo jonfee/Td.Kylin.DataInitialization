@@ -53,6 +53,11 @@ namespace Td.Kylin.DataInit.InitServices
             return ApiAuthorizeProvider.InitDB(this.XmlReadData, connectionString);
         }
 
+        public override bool Reset(string connectionString)
+        {
+            return ApiAuthorizeProvider.UpdateDB(this.XmlReadData, connectionString);
+        }
+
         protected override List<ApiAuthorizaModel> ReadDB(string connectionString)
         {
             return ApiAuthorizeProvider.DownloadDB(connectionString);

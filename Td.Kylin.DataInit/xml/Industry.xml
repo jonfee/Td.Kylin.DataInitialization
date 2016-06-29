@@ -16,7 +16,7 @@
     <industry id="101113" name="湘菜" icon="img1/industry/101113.png" disabled="false" tagstatus="0" />
     <industry id="101114" name="东北菜" icon="img1/industry/101114.png" disabled="false" tagstatus="0" />
     <industry id="101115" name="海鲜" icon="img1/industry/101115.png" disabled="false" tagstatus="0" />
-    <industry id="101116" name="其他" icon="img1/industry/101116.png" disabled="false" tagstatus="0" />
+    <industry id="101999" name="其他" icon="img1/industry/101999.png" disabled="false" tagstatus="0" />
   </topindustry>
   <topindustry id="102" name="休闲娱乐" icon="img1/industry/102.png" disabled="false" tagstatus="0">
     <industry id="102101" name="KTV" icon="img1/industry/102101.png" disabled="false" tagstatus="0" />
@@ -37,7 +37,7 @@
     <industry id="102116" name="DIY手工坊" icon="img1/industry/102116.png" disabled="false" tagstatus="0" />
     <industry id="102117" name="温泉" icon="img1/industry/102117.png" disabled="false" tagstatus="0" />
     <industry id="102118" name="桌球馆" icon="img1/industry/102118.png" disabled="false" tagstatus="0" />
-    <industry id="102119" name="其他" icon="img1/industry/102119.png" disabled="false" tagstatus="0" />
+    <industry id="102999" name="其他" icon="img1/industry/102999.png" disabled="false" tagstatus="0" />
   </topindustry>
   <topindustry id="103" name="丽人" icon="img1/industry/103.png" disabled="false" tagstatus="0">
     <industry id="103101" name="美发" icon="img1/industry/103101.png" disabled="false" tagstatus="0" />
@@ -52,7 +52,7 @@
     <industry id="103110" name="整形" icon="img1/industry/103110.png" disabled="false" tagstatus="0" />
     <industry id="103111" name="纹身" icon="img1/industry/103111.png" disabled="false" tagstatus="0" />
     <industry id="103112" name="产后恢复整形" icon="img1/industry/103112.png" disabled="false" tagstatus="0" />
-    <industry id="103113" name="其他" icon="img1/industry/103113.png" disabled="false" tagstatus="0" />
+    <industry id="103999" name="其他" icon="img1/industry/103999.png" disabled="false" tagstatus="0" />
   </topindustry>
   <topindustry id="104" name="购物" icon="img1/industry/104.png" disabled="false" tagstatus="0">
     <industry id="104101" name="超市/便利店" icon="img1/industry/104101.png" disabled="false" tagstatus="0" />
@@ -72,7 +72,7 @@
     <industry id="104115" name="家居建材" icon="img1/industry/104115.png" disabled="false" tagstatus="0" />
     <industry id="104116" name="蔬菜店" icon="img1/industry/104116.png" disabled="false" tagstatus="0" />
     <industry id="104117" name="报刊亭" icon="img1/industry/104117.png" disabled="false" tagstatus="0" />
-    <industry id="104118" name="其他" icon="img1/industry/104118.png" disabled="false" tagstatus="0" />
+    <industry id="104999" name="其他" icon="img1/industry/104999.png" disabled="false" tagstatus="0" />
   </topindustry>
   <topindustry id="105" name="生活服务" icon="img1/industry/105.png" disabled="false" tagstatus="0">
     <industry id="105101" name="家政" icon="img1/industry/105101.png" disabled="false" tagstatus="0" />
@@ -99,7 +99,7 @@
     <industry id="105122" name="酒店" icon="img1/industry/105122.png" disabled="false" tagstatus="0" />
     <industry id="105123" name="婚庆策划" icon="img1/industry/105123.png" disabled="false" tagstatus="0" />
     <industry id="105124" name="货运物流" icon="img1/industry/105124.png" disabled="false" tagstatus="0" />
-    <industry id="105125" name="其他" icon="img1/industry/105125.png" disabled="false" tagstatus="0" />
+    <industry id="105999" name="其他" icon="img1/industry/105999.png" disabled="false" tagstatus="0" />
   </topindustry>
   <topindustry id="106" name="公共服务" icon="img1/industry/106.png" disabled="false" tagstatus="0">
     <industry id="106101" name="居委会/街道办" icon="img1/industry/106101.png" disabled="false" tagstatus="0" />
@@ -114,6 +114,6 @@
     <industry id="106110" name="邮政" icon="img1/industry/106110.png" disabled="false" tagstatus="0" />
     <industry id="106111" name="火车票/飞机票" icon="img1/industry/106111.png" disabled="false" tagstatus="0" />
     <industry id="106112" name="电信营业厅" icon="img1/industry/106112.png" disabled="false" tagstatus="0" />
-    <industry id="106113" name="其他" icon="img1/industry/106113.png" disabled="false" tagstatus="0" />
+    <industry id="106999" name="其他" icon="img1/industry/106999.png" disabled="false" tagstatus="0" />
   </topindustry>
 </root>

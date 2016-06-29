@@ -70,7 +70,24 @@ namespace Td.Kylin.DataInit
         #region 初始化事件触发
 
         /// <summary>
-        /// 初始化事件触发
+        /// 更新到默认
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnDelReset_Click(object sender, EventArgs e)
+        {
+            UpdateDBConnection();
+
+            IDataInit service = GetService();
+
+            if (null != service)
+            {
+                service.Reset();
+            }
+        }
+
+        /// <summary>
+        /// 初始化
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>

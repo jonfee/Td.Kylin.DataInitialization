@@ -31,7 +31,7 @@ namespace Td.Kylin.DataInit.InitServices
             XElement root = new XElement("root");
             xdoc.Add(root);
 
-            foreach(var admin in this.DbReadData)
+            foreach (var admin in this.DbReadData)
             {
                 XElement node = new XElement("admin");
 
@@ -51,6 +51,11 @@ namespace Td.Kylin.DataInit.InitServices
         public override bool Init(string connectionString)
         {
             return AdminAccountProvider.InitDB(this.XmlReadData, connectionString);
+        }
+
+        public override bool Reset(string connectionString)
+        {
+            return AdminAccountProvider.UpdateDB(this.XmlReadData, connectionString);
         }
 
         protected override List<AdminAccountModel> ReadDB(string connectionString)

@@ -8,10 +8,16 @@ namespace Td.Kylin.DataInit.InitServices
     public interface IDataInit
     {
         /// <summary>
-        /// 初始化到数据库
+        /// 初始化（更新）到数据库
         /// </summary>
         /// <returns></returns>
         bool Init();
+
+        /// <summary>
+        /// 格式化（重置）到数据库
+        /// </summary>
+        /// <returns></returns>
+        bool Reset();
 
         /// <summary>
         /// 从数据库下载最新

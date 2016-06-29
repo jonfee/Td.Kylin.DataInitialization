@@ -13,11 +13,43 @@ namespace Td.Kylin.DataInit.ServiceProvider
     public class ApiAuthorizeProvider
     {
         /// <summary>
-        /// 初始化接口模块授权数据
+        /// 初始化
         /// </summary>
         /// <param name="items"></param>
         /// <returns></returns>
         public static bool InitDB(IEnumerable<ApiAuthorizaModel> items, string connectionString)
+        {
+            using (var db = new DataContext(connectionString))
+            {
+                if (null == items || items.Count() < 1) return false;
+
+                var all = db.System_ModuleAuthorize.ToList();
+                //db.System_ModuleAuthorize.AttachRange(all);
+                db.System_ModuleAuthorize.RemoveRange(all);
+
+                foreach (var item in items)
+                {
+                    db.System_ModuleAuthorize.Add(new Entity.System_ModuleAuthorize
+                    {
+                        ServerID = item.ServerID,
+                        ModuleID = item.ModuleID,
+                        AppSecret = item.Secret,
+                        Role = item.Role,
+                        CreateTime = DateTime.Now,
+                        UpdateTime = DateTime.Now
+                    });
+                }
+
+                return db.SaveChanges() > 0;
+            }
+        }
+
+        /// <summary>
+        /// 更新
+        /// </summary>
+        /// <param name="items"></param>
+        /// <returns></returns>
+        public static bool UpdateDB(IEnumerable<ApiAuthorizaModel> items, string connectionString)
         {
             using (var db = new DataContext(connectionString))
             {

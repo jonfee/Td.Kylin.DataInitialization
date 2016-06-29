@@ -69,6 +69,11 @@ namespace Td.Kylin.DataInit.InitServices
             return JobCategoryProvider.InitDB(this.XmlReadData, connectionString);
         }
 
+        public override bool Reset(string connectionString)
+        {
+            return JobCategoryProvider.UpdateDB(this.XmlReadData, connectionString);
+        }
+
         protected override List<Job_Category> ReadDB(string connectionString)
         {
             return JobCategoryProvider.DownloadDB(connectionString);

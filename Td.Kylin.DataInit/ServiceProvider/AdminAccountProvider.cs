@@ -14,11 +14,49 @@ namespace Td.Kylin.DataInit.ServiceProvider
     public class AdminAccountProvider
     {
         /// <summary>
-        /// 初始化天道后台管理员账号信息
+        /// 初始化数据
         /// </summary>
         /// <param name="items"></param>
         /// <returns></returns>
         public static bool InitDB(IEnumerable<AdminAccountModel> items, string connectionString)
+        {
+            using (var db = new DataContext(connectionString))
+            {
+                if (null == items || items.Count() < 1) return false;
+
+                var all = db.Admin_Account.ToList();
+                //db.Admin_Account.AttachRange(all);
+                db.Admin_Account.RemoveRange(all);
+
+                foreach (var item in items)
+                {
+                    db.Admin_Account.Add(new Entity.Admin_Account
+                    {
+                        AdminID = Tools.NewId(),
+                        CreateTime = DateTime.Now,
+                        DataStatus = true,
+                        LastIp = "127.0.0.1",
+                        LastTime = DateTime.Now,
+                        Logins = 0,
+                        Password = item.Password,
+                        PowerLevel = item.Role,
+                        Realname = item.RealName,
+                        Username = item.Account,
+                        UserPic = string.Empty
+                    });
+                }
+
+                return db.SaveChanges() > 0;
+            }
+        }
+
+        /// <summary>
+        /// 更新数据
+        /// </summary>
+        /// <param name="items"></param>
+        /// <param name="connectionString"></param>
+        /// <returns></returns>
+        public static bool UpdateDB(IEnumerable<AdminAccountModel> items, string connectionString)
         {
             using (var db = new DataContext(connectionString))
             {

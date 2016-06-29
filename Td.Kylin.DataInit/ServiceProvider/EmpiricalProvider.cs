@@ -13,11 +13,43 @@ namespace Td.Kylin.DataInit.ServiceProvider
     public class EmpiricalProvider
     {
         /// <summary>
-        /// 初始化用户经验值获取规则
+        /// 初始化
         /// </summary>
         /// <param name="items"></param>
         /// <returns></returns>
         public static bool InitDB(IEnumerable<System_EmpiricalConfig> items, string connectionString)
+        {
+            using (var db = new DataContext(connectionString))
+            {
+                if (null == items || items.Count() < 1) return false;
+
+                var all = db.System_EmpiricalConfig.ToList();
+                //db.System_EmpiricalConfig.AttachRange(all);
+                db.System_EmpiricalConfig.RemoveRange(all);
+
+                foreach (var item in items)
+                {
+                    var model = new System_EmpiricalConfig();
+                    model.ActivityType = item.ActivityType;
+                    model.MaxLimit = item.MaxLimit;
+                    model.MaxUnit = item.MaxUnit;
+                    model.Repeatable = item.Repeatable;
+                    model.Score = item.Score;
+                    model.UpdateTime = DateTime.Now;
+
+                    db.System_EmpiricalConfig.Add(model);
+                }
+
+                return db.SaveChanges() > 0;
+            }
+        }
+
+        /// <summary>
+        /// 更新
+        /// </summary>
+        /// <param name="items"></param>
+        /// <returns></returns>
+        public static bool UpdateDB(IEnumerable<System_EmpiricalConfig> items, string connectionString)
         {
             using (var db = new DataContext(connectionString))
             {

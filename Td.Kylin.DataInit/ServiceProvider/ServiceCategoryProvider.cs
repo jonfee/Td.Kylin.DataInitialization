@@ -23,6 +23,40 @@ namespace Td.Kylin.DataInit.ServiceProvider
             {
                 if (null == items || items.Count() < 1) return false;
 
+                var all = db.Service_SystemCategory.ToList();
+                db.Service_SystemCategory.RemoveRange(all);
+
+                foreach (var item in items)
+                {
+                    var model = new Service_SystemCategory();
+                    model.CategoryID = item.CategoryID;
+                    model.IsDisabled = item.IsDisabled;
+                    model.Icon = item.Icon;
+                    model.CategoryPath = item.CategoryPath;
+                    model.Name = item.Name;
+                    model.OrderNo = item.OrderNo;
+                    model.IsDelete = item.IsDelete;
+                    model.ParentCategoryID = item.ParentCategoryID;
+                    model.CreateTime = DateTime.Now;
+
+                    db.Service_SystemCategory.Add(model);
+                }
+
+                return db.SaveChanges() > 0;
+            }
+        }
+
+        /// <summary>
+        /// 更新
+        /// </summary>
+        /// <param name="items"></param>
+        /// <returns></returns>
+        public static bool UpdateDB(IEnumerable<Service_SystemCategory> items, string connectionString)
+        {
+            using (var db = new DataContext(connectionString))
+            {
+                if (null == items || items.Count() < 1) return false;
+
                 foreach (var item in items)
                 {
                     var model = db.Service_SystemCategory.SingleOrDefault(p => p.CategoryID == item.CategoryID);

@@ -88,6 +88,11 @@ namespace Td.Kylin.DataInit.InitServices
             return AdPositionProvider.InitDB(this.XmlReadData, connectionString);
         }
 
+        public override bool Reset(string connectionString)
+        {
+            return AdPositionProvider.UpdateDB(this.XmlReadData, connectionString);
+        }
+
         protected override List<AdPageModel> ReadDB(string connectionString)
         {
             return AdPositionProvider.DownloadDB(connectionString);

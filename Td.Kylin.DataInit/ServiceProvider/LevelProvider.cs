@@ -47,6 +47,16 @@ namespace Td.Kylin.DataInit.ServiceProvider
         }
 
         /// <summary>
+        /// 更新
+        /// </summary>
+        /// <param name="items"></param>
+        /// <returns></returns>
+        public static bool UpdateDB(IEnumerable<System_Level> items, string connectionString)
+        {
+            return InitDB(items, connectionString);
+        }
+
+        /// <summary>
         /// 从数据库下载数据
         /// </summary>
         /// <returns></returns>

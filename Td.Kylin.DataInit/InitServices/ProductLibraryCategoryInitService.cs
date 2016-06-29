@@ -80,6 +80,11 @@ namespace Td.Kylin.DataInit.InitServices
             return ProductLibraryCategoryProvider.InitDB(this.XmlReadData, connectionString);
         }
 
+        public override bool Reset(string connectionString)
+        {
+            return ProductLibraryCategoryProvider.UpdateDB(this.XmlReadData, connectionString);
+        }
+
         protected override List<Library_Category> ReadDB(string connectionString)
         {
             return ProductLibraryCategoryProvider.DownloadDB(connectionString);

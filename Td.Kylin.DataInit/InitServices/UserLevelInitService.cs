@@ -32,7 +32,7 @@ namespace Td.Kylin.DataInit.InitServices
             XElement root = new XElement("root");
             xdoc.Add(root);
 
-            foreach(var item in this.DbReadData)
+            foreach (var item in this.DbReadData)
             {
                 XElement node = new XElement("level");
 
@@ -52,6 +52,11 @@ namespace Td.Kylin.DataInit.InitServices
         public override bool Init(string connectionString)
         {
             return LevelProvider.InitDB(this.XmlReadData, connectionString);
+        }
+
+        public override bool Reset(string connectionString)
+        {
+            return LevelProvider.UpdateDB(this.XmlReadData, connectionString);
         }
 
         protected override List<System_Level> ReadDB(string connectionString)

@@ -76,6 +76,11 @@ namespace Td.Kylin.DataInit.InitServices
             return IndustryProvider.InitDB(this.XmlReadData, connectionString);
         }
 
+        public override bool Reset(string connectionString)
+        {
+            return IndustryProvider.UpdateDB(this.XmlReadData, connectionString);
+        }
+
         protected override List<Merchant_Industry> ReadDB(string connectionString)
         {
             return IndustryProvider.DownloadDB(connectionString);

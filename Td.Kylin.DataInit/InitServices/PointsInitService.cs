@@ -54,6 +54,11 @@ namespace Td.Kylin.DataInit.InitServices
             return PointsProvider.InitDB(this.XmlReadData, connectionString);
         }
 
+        public override bool Reset(string connectionString)
+        {
+            return PointsProvider.UpdateDB(this.XmlReadData, connectionString);
+        }
+
         protected override List<System_PointsConfig> ReadDB(string connectionString)
         {
             return PointsProvider.DownloadDB(connectionString);

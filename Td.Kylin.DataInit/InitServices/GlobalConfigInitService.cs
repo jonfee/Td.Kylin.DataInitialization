@@ -84,6 +84,11 @@ namespace Td.Kylin.DataInit.InitServices
             return GlobalConfigProvider.InitDB(this.XmlReadData,connectionString);
         }
 
+        public override bool Reset(string connectionString)
+        {
+            return GlobalConfigProvider.UpdateDB(this.XmlReadData, connectionString);
+        }
+
         protected override List<System_GlobalResources> ReadDB(string connectionString)
         {
             return GlobalConfigProvider.DownloadDB(connectionString);

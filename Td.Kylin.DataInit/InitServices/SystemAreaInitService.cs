@@ -57,6 +57,11 @@ namespace Td.Kylin.DataInit.InitServices
             return SystemAreaProvider.InitDB(this.XmlReadData, connectionString);
         }
 
+        public override bool Reset(string connectionString)
+        {
+            return SystemAreaProvider.UpdateDB(this.XmlReadData, connectionString);
+        }
+
         protected override List<System_Area> ReadDB(string connectionString)
         {
             return SystemAreaProvider.DownloadDB(connectionString);

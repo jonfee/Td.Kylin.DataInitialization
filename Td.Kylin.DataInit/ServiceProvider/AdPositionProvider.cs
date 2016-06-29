@@ -12,7 +12,59 @@ namespace Td.Kylin.DataInit.ServiceProvider
     /// </summary>
     public class AdPositionProvider
     {
+        /// <summary>
+        /// 初始化
+        /// </summary>
+        /// <param name="items"></param>
+        /// <param name="connectionString"></param>
+        /// <returns></returns>
         public static bool InitDB(IEnumerable<AdPageModel> items, string connectionString)
+        {
+            using (var db = new DataContext(connectionString))
+            {
+                if (null == items || items.Count() < 1) return false;
+
+                var allPages = db.Ad_Page.ToList();
+                //db.Ad_Page.AttachRange(allPages);
+                db.Ad_Page.RemoveRange(allPages);
+
+                var allPositions = db.Ad_Position.ToList();
+                //db.Ad_Page.AttachRange(allPages);
+                db.Ad_Position.RemoveRange(allPositions);
+
+                foreach (var item in items)
+                {
+                    db.Ad_Page.Add(new Entity.Ad_Page
+                    {
+                        PageID = item.ID,
+                        PageName = item.Name,
+                        PlatformType = item.PlatformType
+                    });
+
+                    foreach (var position in item.AdPositionList)
+                    {
+                        var adposition = new Entity.Ad_Position();
+
+                        adposition.ADDisplayType = position.DisplayType;
+                        adposition.Code = position.Code;
+                        adposition.CreateTime = DateTime.Now;
+                        adposition.Enable = position.Enable;
+                        adposition.Name = position.Name;
+                        adposition.Intro = position.Intro;
+                        adposition.MaxCount = position.MaxCount;
+                        adposition.PageID = position.PageID;
+                        adposition.PositionID = position.ID;
+                        adposition.PreviewPicture = position.PreViewPicture;
+
+                        db.Ad_Position.Add(adposition);
+                    }
+                }
+
+                return db.SaveChanges() > 0;
+            }
+        }
+
+        public static bool UpdateDB(IEnumerable<AdPageModel> items, string connectionString)
         {
             using (var db = new DataContext(connectionString))
             {

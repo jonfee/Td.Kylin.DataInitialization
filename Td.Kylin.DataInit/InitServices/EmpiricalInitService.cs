@@ -31,7 +31,7 @@ namespace Td.Kylin.DataInit.InitServices
             XElement root = new XElement("empirical");
             xdoc.Add(root);
 
-            foreach(var item in this.DbReadData)
+            foreach (var item in this.DbReadData)
             {
                 XElement node = new XElement("rule");
 
@@ -52,6 +52,11 @@ namespace Td.Kylin.DataInit.InitServices
         public override bool Init(string connectionString)
         {
             return EmpiricalProvider.InitDB(this.XmlReadData, connectionString);
+        }
+
+        public override bool Reset(string connectionString)
+        {
+            return EmpiricalProvider.UpdateDB(this.XmlReadData, connectionString);
         }
 
         protected override List<System_EmpiricalConfig> ReadDB(string connectionString)

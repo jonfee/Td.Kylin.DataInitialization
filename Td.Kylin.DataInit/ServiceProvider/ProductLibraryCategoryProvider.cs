@@ -23,6 +23,44 @@ namespace Td.Kylin.DataInit.ServiceProvider
             {
                 if (null == items || items.Count() < 1) return false;
 
+                var all = db.Library_Category.ToList();
+                db.Library_Category.RemoveRange(all);
+
+                foreach (var item in items)
+                {
+                    var model = new Library_Category();
+                    model.Name = item.Name;
+                    model.CategoryID = item.CategoryID;
+                    model.Depth = item.Depth;
+                    model.Description = item.Description;
+                    model.Disabled = item.Disabled;
+                    model.IsDelete = item.IsDelete;
+                    model.Ico = item.Ico;
+                    model.Layer = item.Layer;
+                    model.ParentID = item.ParentID;
+                    model.ProductNumber = 0;
+                    model.CreateTime = DateTime.Now;
+                    model.DeleteTime = DateTime.Now;
+                    model.OrderNo = 0;
+
+                    db.Library_Category.Add(model);
+                }
+
+                return db.SaveChanges() > 0;
+            }
+        }
+
+        /// <summary>
+        /// 更新
+        /// </summary>
+        /// <param name="items"></param>
+        /// <returns></returns>
+        public static bool UpdateDB(IEnumerable<Library_Category> items, string connectionString)
+        {
+            using (var db = new DataContext(connectionString))
+            {
+                if (null == items || items.Count() < 1) return false;
+
                 foreach (var item in items)
                 {
                     var model = db.Library_Category.SingleOrDefault(p => p.CategoryID == item.CategoryID);

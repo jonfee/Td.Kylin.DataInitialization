@@ -23,6 +23,52 @@ namespace Td.Kylin.DataInit.ServiceProvider
             {
                 if (null == items || items.Count() < 1) return false;
 
+                var all = db.System_PointsConfig.ToList();
+                db.System_PointsConfig.RemoveRange(all);
+
+                foreach (var item in items)
+                {
+                    var model = db.System_PointsConfig.SingleOrDefault(p => p.ActivityType == item.ActivityType);
+
+                    if (null != model)
+                    {
+                        db.System_PointsConfig.Attach(model);
+                        db.Entry(model).State = EntityState.Modified;
+                        model.MaxLimit = item.MaxLimit;
+                        model.MaxUnit = item.MaxUnit;
+                        model.Repeatable = item.Repeatable;
+                        model.Score = item.Score;
+                        model.UpdateTime = DateTime.Now;
+                    }
+                    else
+                    {
+                        model = new System_PointsConfig();
+                        model.ActivityType = item.ActivityType;
+                        model.MaxLimit = item.MaxLimit;
+                        model.MaxUnit = item.MaxUnit;
+                        model.Repeatable = item.Repeatable;
+                        model.Score = item.Score;
+                        model.UpdateTime = DateTime.Now;
+
+                        db.System_PointsConfig.Add(model);
+                    }
+                }
+
+                return db.SaveChanges() > 0;
+            }
+        }
+
+        /// <summary>
+        /// 更新
+        /// </summary>
+        /// <param name="items"></param>
+        /// <returns></returns>
+        public static bool UpdateDB(IEnumerable<System_PointsConfig> items, string connectionString)
+        {
+            using (var db = new DataContext(connectionString))
+            {
+                if (null == items || items.Count() < 1) return false;
+
                 foreach (var item in items)
                 {
                     var model = db.System_PointsConfig.SingleOrDefault(p => p.ActivityType == item.ActivityType);

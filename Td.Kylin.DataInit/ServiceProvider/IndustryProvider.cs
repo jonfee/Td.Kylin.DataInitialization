@@ -25,6 +25,41 @@ namespace Td.Kylin.DataInit.ServiceProvider
             {
                 if (null == items || items.Count() < 1) return false;
 
+                var all = db.Merchant_Industry.ToList();
+                //db.Merchant_Industry.AttachRange(all);
+                db.Merchant_Industry.RemoveRange(all);
+
+                foreach (var item in items)
+                {
+                    var model = new Merchant_Industry();
+                    model.IndustryID = item.IndustryID;
+                    model.CreateTime = DateTime.Now;
+                    model.Disabled = item.Disabled;
+                    model.Icon = item.Icon;
+                    model.Layer = item.Layer;
+                    model.Name = item.Name;
+                    model.OrderNo = item.OrderNo;
+                    model.ParentID = item.ParentID;
+                    model.TagStatus = item.TagStatus;
+
+                    db.Merchant_Industry.Add(model);
+                }
+
+                return db.SaveChanges() > 0;
+            }
+        }
+
+        /// <summary>
+        /// 更新
+        /// </summary>
+        /// <param name="items"></param>
+        /// <returns></returns>
+        public static bool UpdateDB(IEnumerable<Merchant_Industry> items, string connectionString)
+        {
+            using (var db = new DataContext(connectionString))
+            {
+                if (null == items || items.Count() < 1) return false;
+
                 foreach (var item in items)
                 {
                     var model = db.Merchant_Industry.SingleOrDefault(p => p.IndustryID == item.IndustryID);

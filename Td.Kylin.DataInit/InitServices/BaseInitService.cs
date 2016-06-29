@@ -114,6 +114,55 @@ namespace Td.Kylin.DataInit.InitServices
         }
 
         /// <summary>
+        /// 实现接口 Reset（更新数据）
+        /// </summary>
+        /// <returns></returns>
+        bool IDataInit.Reset()
+        {
+            return ThreadPool.QueueUserWorkItem((state) =>
+            {
+                try
+                {
+                    MsgWriter.Instance.Write(string.Format("[{0}]重置数据开始……", this.Name));
+
+                    ProgressUpdater.Instance.Update(0);
+
+                    Stopwatch watch = new Stopwatch();
+                    watch.Start();
+
+                    this.XmlReadData = ReadXml();
+
+                    ProgressUpdater.Instance.Update(30);
+
+                    bool success = Reset(DBConnectionRoot.InitDBConnection.ConnectionString);
+
+                    watch.Stop();
+
+                    //完成后操作
+                    if (success)
+                    {
+                        MsgWriter.Instance.Write(string.Format("[{0}]重置数据成功，用时{1}毫秒。", this.Name, watch.ElapsedMilliseconds));
+
+                        string jsonData = Newtonsoft.Json.JsonConvert.SerializeObject(this.XmlReadData);
+
+                        MsgWriter.Instance.Write(string.Format("[{0}]重置数据结果：", this.Name), false);
+                        MsgWriter.Instance.Write(jsonData, false);
+                    }
+                    else
+                    {
+                        MsgWriter.Instance.Write(string.Format("[{0}]重置数据失败！", this.Name));
+                    }
+
+                    ProgressUpdater.Instance.Update(100);
+                }
+                catch (Exception ex)
+                {
+                    OnException(ex);
+                }
+            }, null);
+        }
+
+        /// <summary>
         /// 实现接口Download（从数据库下载最新）
         /// </summary>
         /// <returns></returns>
@@ -166,8 +215,16 @@ namespace Td.Kylin.DataInit.InitServices
         /// <summary>
         /// 抽象初始化到数据库执行方法
         /// </summary>
+        /// <param name="connectionString"></param>
         /// <returns></returns>
         public abstract bool Init(string connectionString);
+
+        /// <summary>
+        /// 抽象重置默认到数据库执行方法
+        /// </summary>
+        /// <param name="connectionString"></param>
+        /// <returns></returns>
+        public abstract bool Reset(string connectionString);
 
         /// <summary>
         /// 抽象下载最新数据执行方法
