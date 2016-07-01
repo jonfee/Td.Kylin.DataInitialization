@@ -217,7 +217,6 @@
   <area id="131128" name="阜城县" depth="3" haschild="false" layer="130000,131100,131128" namespell="FCX" parentid="131100" points="" />
   <area id="131181" name="冀州市" depth="3" haschild="false" layer="130000,131100,131181" namespell="JZS" parentid="131100" points="" />
   <area id="131182" name="深州市" depth="3" haschild="false" layer="130000,131100,131182" namespell="SZS" parentid="131100" points="" />
-  <area id="139000" name="省直辖县级行政区划" depth="2" haschild="true" layer="130000,139000" namespell="SZHXJHZOH" parentid="130000" points="" />
   <area id="139001" name="定州市" depth="3" haschild="false" layer="130000,139000,139001" namespell="DZS" parentid="139000" points="" />
   <area id="139002" name="辛集市" depth="3" haschild="false" layer="130000,139000,139002" namespell="XJS" parentid="139000" points="" />
   <area id="140000" name="山西省" depth="1" haschild="true" layer="140000" namespell="SXS" parentid="0" points="" />
@@ -1686,7 +1685,6 @@
   <area id="411727" name="汝南县" depth="3" haschild="false" layer="410000,411700,411727" namespell="RNX" parentid="411700" points="" />
   <area id="411728" name="遂平县" depth="3" haschild="false" layer="410000,411700,411728" namespell="SPX" parentid="411700" points="" />
   <area id="411729" name="新蔡县" depth="3" haschild="false" layer="410000,411700,411729" namespell="XCX" parentid="411700" points="" />
-  <area id="419000" name="省直辖县级行政区划" depth="2" haschild="true" layer="410000,419000" namespell="SZHXJHZOH" parentid="410000" points="" />
   <area id="419001" name="济源市" depth="3" haschild="false" layer="410000,419000,419001" namespell="JYS" parentid="419000" points="" />
   <area id="420000" name="湖北省" depth="1" haschild="true" layer="420000" namespell="HBS" parentid="0" points="" />
   <area id="420100" name="武汉市" depth="2" haschild="true" layer="420000,420100" namespell="WHS" parentid="420000" points="" />
@@ -1801,7 +1799,6 @@
   <area id="422826" name="咸丰县" depth="3" haschild="false" layer="420000,422800,422826" namespell="XFX" parentid="422800" points="" />
   <area id="422827" name="来凤县" depth="3" haschild="false" layer="420000,422800,422827" namespell="LFX" parentid="422800" points="" />
   <area id="422828" name="鹤峰县" depth="3" haschild="false" layer="420000,422800,422828" namespell="HFX" parentid="422800" points="" />
-  <area id="429000" name="省直辖县级行政区划" depth="2" haschild="true" layer="420000,429000" namespell="SZHXJHZOH" parentid="420000" points="" />
   <area id="429004" name="仙桃市" depth="3" haschild="false" layer="420000,429000,429004" namespell="XTS" parentid="429000" points="" />
   <area id="429005" name="潜江市" depth="3" haschild="false" layer="420000,429000,429005" namespell="QJS" parentid="429000" points="" />
   <area id="429006" name="天门市" depth="3" haschild="false" layer="420000,429000,429006" namespell="TMS" parentid="429000" points="" />
@@ -2259,7 +2256,6 @@
   <area id="460321" name="西沙群岛" depth="3" haschild="false" layer="460000,460300,460321" namespell="XSQD" parentid="460300" points="" />
   <area id="460322" name="南沙群岛" depth="3" haschild="false" layer="460000,460300,460322" namespell="NSQD" parentid="460300" points="" />
   <area id="460323" name="中沙群岛的岛礁及其海域" depth="3" haschild="false" layer="460000,460300,460323" namespell="ZSQDDDJJJHY" parentid="460300" points="" />
-  <area id="469000" name="省直辖县级行政区划" depth="2" haschild="true" layer="460000,469000" namespell="SZHXJHZOH" parentid="460000" points="" />
   <area id="469001" name="五指山市" depth="3" haschild="false" layer="460000,469000,469001" namespell="WZSS" parentid="469000" points="" />
   <area id="469002" name="琼海市" depth="3" haschild="false" layer="460000,469000,469002" namespell="QHS" parentid="469000" points="" />
   <area id="469003" name="儋州市" depth="3" haschild="false" layer="460000,469000,469003" namespell="DZS" parentid="469000" points="" />
