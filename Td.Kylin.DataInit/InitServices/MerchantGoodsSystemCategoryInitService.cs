@@ -11,11 +11,11 @@ using Td.Kylin.Entity;
 namespace Td.Kylin.DataInit.InitServices
 {
     /// <summary>
-    /// 产品库分类数据初始化服务
+    /// 商家商品系统分类数据初始化服务
     /// </summary>
-    public class ProductLibraryCategoryInitService : BaseInitService<Library_Category>
+    public class MerchantGoodsSystemCategoryInitService : BaseInitService<MerchantGoods_SystemCategory>
     {
-        public ProductLibraryCategoryInitService() : base(DataInitType.ProductLibraryCategory, "xml/ProductLibraryCategory.xml") { }
+        public MerchantGoodsSystemCategoryInitService() : base(DataInitType.MerchantGoodsSystemCategory, "xml/MerchantGoodsSystemCategory.xml.xml") { }
 
         public override bool Download()
         {
@@ -34,7 +34,7 @@ namespace Td.Kylin.DataInit.InitServices
             xdoc.Add(root);
 
             //获取一级分类
-            var tops = this.DbReadData.Where(p => p.ParentID == 0).ToList();
+            var tops = this.DbReadData.Where(p => p.ParentCategoryID == 0).ToList();
 
             //遍历一级分类
             foreach (var top in tops)
@@ -44,27 +44,23 @@ namespace Td.Kylin.DataInit.InitServices
 
                 first.SetAttributeValue("id", top.CategoryID);
                 first.SetAttributeValue("name", top.Name);
-                first.SetAttributeValue("icon", top.Ico);
-                first.SetAttributeValue("disabled", top.Disabled);
-                first.SetAttributeValue("description", top.Description);
-                first.SetAttributeValue("depth", top.Depth);
+                first.SetAttributeValue("icon", top.Icon);
+                first.SetAttributeValue("disabled", top.IsDisabled);
 
                 root.Add(first);
 
                 //遍历子分类
-                var childrens = this.DbReadData.Where(p => p.ParentID == top.CategoryID);
+                var childrens = this.DbReadData.Where(p => p.ParentCategoryID == top.CategoryID);
 
                 foreach (var child in childrens)
                 {
                     //定义子分类节点
                     XElement second = new XElement("category");
 
-                    first.SetAttributeValue("id", top.CategoryID);
-                    first.SetAttributeValue("name", top.Name);
-                    first.SetAttributeValue("icon", top.Ico);
-                    first.SetAttributeValue("disabled", top.Disabled);
-                    first.SetAttributeValue("description", top.Description);
-                    first.SetAttributeValue("depth", top.Depth);
+                    second.SetAttributeValue("id", top.CategoryID);
+                    second.SetAttributeValue("name", top.Name);
+                    second.SetAttributeValue("icon", top.Icon);
+                    second.SetAttributeValue("disabled", top.IsDisabled);
 
                     first.Add(second);
                 }
@@ -77,61 +73,57 @@ namespace Td.Kylin.DataInit.InitServices
 
         public override bool Init(string connectionString)
         {
-            return ProductLibraryCategoryProvider.InitDB(this.XmlReadData, connectionString);
+            return MerchantGoodsSystemCategoryProvider.InitDB(this.XmlReadData, connectionString);
         }
 
         public override bool Reset(string connectionString)
         {
-            return ProductLibraryCategoryProvider.UpdateDB(this.XmlReadData, connectionString);
+            return MerchantGoodsSystemCategoryProvider.UpdateDB(this.XmlReadData, connectionString);
         }
 
-        protected override List<Library_Category> ReadDB(string connectionString)
+        protected override List<MerchantGoods_SystemCategory> ReadDB(string connectionString)
         {
-            return ProductLibraryCategoryProvider.DownloadDB(connectionString);
+            return MerchantGoodsSystemCategoryProvider.DownloadDB(connectionString);
         }
 
-        protected override List<Library_Category> ReadXml()
+        protected override List<MerchantGoods_SystemCategory> ReadXml()
         {
             XElement xe = XElement.Load(this.XmlFilePath);
 
             IEnumerable<XElement> top = from em in xe.Elements("topcategory")
                                         select em;
 
-            List<Library_Category> list = new List<Library_Category>();
+            List<MerchantGoods_SystemCategory> list = new List<MerchantGoods_SystemCategory>();
 
             foreach (var ti in top)
             {
-                var parent = new Library_Category();
+                var parent = new MerchantGoods_SystemCategory();
                 parent.CategoryID = Convert.ToInt64(ti.Attribute("id").Value);
                 parent.CreateTime = DateTime.Now;
-                parent.DeleteTime = DateTime.Now;
-                parent.Disabled = Convert.ToBoolean(ti.Attribute("disabled").Value);
-                parent.Ico = ti.Attribute("icon").Value;
+                parent.IsDisabled = Convert.ToBoolean(ti.Attribute("disabled").Value);
+                parent.Icon = ti.Attribute("icon").Value;
                 parent.CategoryID = Convert.ToInt64(ti.Attribute("id").Value);
                 parent.Name = ti.Attribute("name").Value;
                 parent.OrderNo = 0;
-                parent.Depth = Convert.ToInt32(ti.Attribute("depth").Value);
-                parent.Description = ti.Attribute("description").Value;
-                parent.Layer = ti.Attribute("id").Value;
-                parent.ParentID = 0;
+                parent.CategoryPath = ti.Attribute("id").Value;
+                parent.ParentCategoryID = 0;
+                parent.IsDelete = false;
 
                 list.Add(parent);
 
                 //遍历子类
                 foreach (var category in ti.Elements())
                 {
-                    var child = new Library_Category();
+                    var child = new MerchantGoods_SystemCategory();
                     child.CreateTime = DateTime.Now;
-                    child.DeleteTime = DateTime.Now;
-                    child.Disabled = Convert.ToBoolean(category.Attribute("disabled").Value);
-                    child.Ico = category.Attribute("icon").Value;
+                    child.IsDisabled = Convert.ToBoolean(category.Attribute("disabled").Value);
+                    child.Icon = category.Attribute("icon").Value;
                     child.CategoryID = Convert.ToInt64(category.Attribute("id").Value);
                     child.Name = category.Attribute("name").Value;
                     child.OrderNo = 0;
-                    child.Depth = Convert.ToInt32(category.Attribute("depth").Value);
-                    child.Description = category.Attribute("description").Value;
-                    child.Layer = parent.Layer + "," + category.Attribute("id").Value;
-                    child.ParentID = parent.CategoryID;
+                    child.CategoryPath =parent.CategoryPath+","+ category.Attribute("id").Value;
+                    child.ParentCategoryID = parent.CategoryID;
+                    child.IsDelete = false;
 
                     list.Add(child);
                 }

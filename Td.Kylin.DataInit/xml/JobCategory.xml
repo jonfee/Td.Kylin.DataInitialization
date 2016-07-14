@@ -25,7 +25,7 @@
     <category id="101122" name="网站/在线销售"></category>
     <category id="101123" name="团购业务员"></category>
     <category id="101124" name="销售业务跟单"></category>
-    <category id="101999" name="其他"></category>
+    <category id="101999" name="其他职位"></category>
   </topcategory>
   <topcategory id="102" name="广告/会展">
     <category id="102101" name="客户总监/经理"></category>
@@ -43,7 +43,7 @@
     <category id="102113" name="创意/设计师"></category>
     <category id="102114" name="创意/设计经理/主管"></category>
     <category id="102115" name="项目管理"></category>
-    <category id="102999" name="其他"></category>
+    <category id="102999" name="其他职位"></category>
   </topcategory>
   <topcategory id="103" name="市场营销/商务公关">
     <category id="103101" name="市场总监"></category>
@@ -74,7 +74,7 @@
     <category id="103126" name="采购专员"></category>
     <category id="103127" name="选址拓展/新店开发"></category>
     <category id="103128" name="市场调研与分析"></category>
-    <category id="103999" name="其他"></category>
+    <category id="103999" name="其他职位"></category>
   </topcategory>
   <topcategory id="104" name="运营">
     <category id="104101" name="运营经理/主管"></category>
@@ -92,7 +92,7 @@
     <category id="104113" name="主编"></category>
     <category id="104114" name="副主编"></category>
     <category id="104115" name="文案编辑"></category>
-    <category id="104999" name="其他"></category>
+    <category id="104999" name="其他职位"></category>
   </topcategory>
   <topcategory id="105" name="互联网技术">
     <category id="105101" name="首席技术官CTO/首席信息官CTO"></category>
@@ -124,7 +124,7 @@
     <category id="105127" name="网络管理员"></category>
     <category id="105128" name="语音/视频/图形"></category>
     <category id="105129" name="游戏设计/开发"></category>
-    <category id="105999" name="其他"></category>
+    <category id="105999" name="其他职位"></category>
   </topcategory>
   <topcategory id="106" name="建筑/房地产/装修/物业">
     <category id="106101" name="只能大厦/综合布线/弱电"></category>
@@ -147,7 +147,7 @@
     <category id="106118" name="电气设计"></category>
     <category id="106119" name="城市规划/景观设计"></category>
     <category id="106120" name="测绘/测量"></category>
-    <category id="106999" name="其他"></category>
+    <category id="106999" name="其他职位"></category>
   </topcategory>
   <topcategory id="107" name="金融/银行/证券/投资">
     <category id="107101" name="储备经理人"></category>
@@ -165,7 +165,7 @@
     <category id="107113" name="客户经理/主管"></category>
     <category id="107114" name="客户服务"></category>
     <category id="107115" name="风险管理/控制/稽查"></category>
-    <category id="107999" name="其他"></category>
+    <category id="107999" name="其他职位"></category>
   </topcategory>
   <topcategory id="108" name="汽车">
     <category id="108101" name="储备经理人"></category>
@@ -185,7 +185,7 @@
     <category id="108115" name="汽车修理"></category>
     <category id="108116" name="二手车评估师"></category>
     <category id="108117" name="装饰美容"></category>
-    <category id="108999" name="其他"></category>
+    <category id="108999" name="其他职位"></category>
   </topcategory>
   <topcategory id="109" name="交通/仓储/物流">
     <category id="109101" name="司机"></category>
@@ -201,7 +201,7 @@
     <category id="109111" name="仓库经理/主管"></category>
     <category id="109112" name="仓库管理员"></category>
     <category id="109113" name="搬运工"></category>
-    <category id="109999" name="其他"></category>
+    <category id="109999" name="其他职位"></category>
   </topcategory>
   <topcategory id="110" name="零售业">
     <category id="110101" name="招商经理/主管"></category>
@@ -213,7 +213,7 @@
     <category id="110107" name="兼职店员"></category>
     <category id="110108" name="防损员/内保"></category>
     <category id="110109" name="奢侈品业务"></category>
-    <category id="110999" name="其他"></category>
+    <category id="110999" name="其他职位"></category>
   </topcategory>
   <topcategory id="111" name="医疗/护理/保健">
     <category id="111101" name="美容整形医师"></category>
@@ -226,7 +226,7 @@
     <category id="111108" name="针灸推拿"></category>
     <category id="111109" name="理疗师"></category>
     <category id="111110" name="护士/护理人员"></category>
-    <category id="111999" name="其他"></category>
+    <category id="111999" name="其他职位"></category>
   </topcategory>
   <topcategory id="112" name="人力资源">
     <category id="112101" name="猎头顾问/助理"></category>
@@ -237,7 +237,7 @@
     <category id="112106" name="培训经理/主管"></category>
     <category id="112107" name="培训专员/助理/培训师"></category>
     <category id="112108" name="薪酬福利/绩效考核/员工关系"></category>
-    <category id="112999" name="其他"></category>
+    <category id="112999" name="其他职位"></category>
   </topcategory>
   <topcategory id="113" name="客户服务/技术支持">
     <category id="113101" name="客户协调"></category>
@@ -248,7 +248,7 @@
     <category id="113106" name="售前/售后技术支持工程师"></category>
     <category id="113107" name="客户咨询热线/呼叫中心人员"></category>
     <category id="113108" name="淘宝客服"></category>
-    <category id="113999" name="其他"></category>
+    <category id="113999" name="其他职位"></category>
   </topcategory>
   <topcategory id="114" name="行政/后勤">
     <category id="114101" name="电脑操作/打字/录入员"></category>
@@ -260,7 +260,7 @@
     <category id="114107" name="图书/资料/档案管理"></category>
     <category id="114108" name="后勤"></category>
     <category id="114109" name="合同管理"></category>
-    <category id="114999" name="其他"></category>
+    <category id="114999" name="其他职位"></category>
   </topcategory>
   <topcategory id="115" name="教育/培训">
     <category id="115101" name="幼教"></category>
@@ -271,7 +271,7 @@
     <category id="115106" name="教育产品开发"></category>
     <category id="115107" name="教练"></category>
     <category id="115108" name="家教"></category>
-    <category id="115999" name="其他"></category>
+    <category id="115999" name="其他职位"></category>
   </topcategory>
   <topcategory id="116" name="财务/审计/统计">
     <category id="116101" name="统计员"></category>
@@ -292,7 +292,7 @@
     <category id="116116" name="审计经理/主管"></category>
     <category id="116117" name="税务专员/助理"></category>
     <category id="116118" name="税务经理/主管"></category>
-    <category id="116999" name="其他"></category>
+    <category id="116999" name="其他职位"></category>
   </topcategory>
   <topcategory id="117" name="法律">
     <category id="117101" name="法律部经理/主任"></category>
@@ -300,7 +300,7 @@
     <category id="117103" name="法律顾问"></category>
     <category id="117104" name="法务人员"></category>
     <category id="117105" name="产权专利顾问/专业代理"></category>
-    <category id="117999" name="其他"></category>
+    <category id="117999" name="其他职位"></category>
   </topcategory>
   <topcategory id="118" name="翻译（口译与笔译）">
     <category id="118101" name="英语类"></category>
@@ -335,7 +335,7 @@
     <category id="119121" name="美容顾问"></category>
     <category id="119122" name="按摩/足疗"></category>
     <category id="119123" name="救生员"></category>
-    <category id="119999" name="其他"></category>
+    <category id="119999" name="其他职位"></category>
   </topcategory>
   <topcategory id="120" name="美术/设计/创意">
     <category id="120101" name="平面设计"></category>
@@ -350,7 +350,7 @@
     <category id="120110" name="印刷排版/制版"></category>
     <category id="120111" name="UI设计师"></category>
     <category id="120112" name="设计管理人员"></category>
-    <category id="120999" name="其他"></category>
+    <category id="120999" name="其他职位"></category>
   </topcategory>
   <topcategory id="121" name="保险">
     <category id="121101" name="业务经理/主管"></category>
@@ -367,7 +367,7 @@
     <category id="121112" name="保险培训师"></category>
     <category id="121113" name="储备经理人"></category>
     <category id="121114" name="契约管理"></category>
-    <category id="121999" name="其他"></category>
+    <category id="121999" name="其他职位"></category>
   </topcategory>
   <topcategory id="122" name="技工">
     <category id="122101" name="普工"></category>
@@ -379,7 +379,7 @@
     <category id="122107" name="水工/木工/油漆工"></category>
     <category id="122108" name="汽车修理工/机修工"></category>
     <category id="122109" name="铲车/叉车工"></category>
-    <category id="122999" name="其他"></category>
+    <category id="122999" name="其他职位"></category>
   </topcategory>
   <topcategory id="123" name="社区/居民/家政服务">
     <category id="123101" name="家政人员"></category>
@@ -390,7 +390,7 @@
     <category id="123106" name="保洁"></category>
     <category id="123107" name="保安经理"></category>
     <category id="123108" name="保安"></category>
-    <category id="123999" name="其他"></category>
+    <category id="123999" name="其他职位"></category>
   </topcategory>
   <topcategory id="124" name="兼职/实习生/社工/其他">
     <category id="124101" name="实习生"></category>
@@ -400,6 +400,6 @@
     <category id="124105" name="社会工作者/社工"></category>
     <category id="124106" name="兼职"></category>
     <category id="124107" name="临时"></category>
-    <category id="124999" name="其他"></category>
+    <category id="124999" name="其他职位"></category>
   </topcategory>
 </root>

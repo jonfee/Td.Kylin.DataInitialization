@@ -1,4 +1,4 @@
-﻿using Microsoft.Data.Entity;
+﻿using Microsoft.EntityFrameworkCore;
 using Td.Kylin.Entity;
 
 namespace Td.Kylin.DataInit.Data
@@ -64,6 +64,11 @@ namespace Td.Kylin.DataInit.Data
         /// 产品库分类
         /// </summary>
         public DbSet<Library_Category> Library_Category { get { return Set<Library_Category>(); } }
+
+        /// <summary>
+        /// 商品商品系统分类
+        /// </summary>
+        public DbSet<MerchantGoods_SystemCategory> MerchantGoods_SystemCategory { get { return Set<MerchantGoods_SystemCategory>(); } }
 
         /// <summary>
         /// 岗位类型

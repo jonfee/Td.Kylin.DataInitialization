@@ -1,4 +1,4 @@
-﻿using Microsoft.Data.Entity;
+﻿using Microsoft.EntityFrameworkCore;
 using Td.Kylin.Entity;
 
 namespace Td.Kylin.DataInit.Data
@@ -109,6 +109,13 @@ namespace Td.Kylin.DataInit.Data
 
             //产品库分类
             modelBuilder.Entity<Library_Category>(entity =>
+            {
+                entity.Property(p => p.CategoryID).ValueGeneratedNever();
+                entity.HasKey(p => p.CategoryID);
+            });
+
+            //商家商品系统分类
+            modelBuilder.Entity<MerchantGoods_SystemCategory>(entity =>
             {
                 entity.Property(p => p.CategoryID).ValueGeneratedNever();
                 entity.HasKey(p => p.CategoryID);

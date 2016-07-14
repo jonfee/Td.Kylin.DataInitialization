@@ -1,8 +1,7 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Td.Kylin.DataInit.Data;
 using Td.Kylin.Entity;
 
@@ -11,7 +10,7 @@ namespace Td.Kylin.DataInit.ServiceProvider
     /// <summary>
     /// 岗位分类数据业务提供
     /// </summary>
-   public class JobCategoryProvider
+    public class JobCategoryProvider
     {
         /// <summary>
         /// 初始化数据
@@ -66,7 +65,7 @@ namespace Td.Kylin.DataInit.ServiceProvider
                     if (null != model)
                     {
                         db.Job_Category.Attach(model);
-                        db.Entry(model).State = Microsoft.Data.Entity.EntityState.Modified;
+                        db.Entry(model).State = EntityState.Modified;
                         model.Name = item.Name;
                         model.ParentID = item.ParentID;
                     }

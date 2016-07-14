@@ -170,8 +170,11 @@ namespace Td.Kylin.DataInit
                 case DataInitType.ServiceCategory:
                     service = new ServiceCategoryInitService();
                     break;
-                case DataInitType.ProductCategory:
+                case DataInitType.ProductLibraryCategory:
                     service = new ProductLibraryCategoryInitService();
+                    break;
+                case DataInitType.MerchantGoodsSystemCategory:
+                    service = new MerchantGoodsSystemCategoryInitService();
                     break;
                 case DataInitType.JobCategory:
                     service = new JobCategoryInitService();

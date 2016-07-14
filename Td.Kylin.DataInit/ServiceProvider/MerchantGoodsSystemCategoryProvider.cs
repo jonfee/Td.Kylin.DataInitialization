@@ -8,38 +8,38 @@ using Td.Kylin.Entity;
 namespace Td.Kylin.DataInit.ServiceProvider
 {
     /// <summary>
-    /// 系统服务分类数据业务提供
+    /// 商家商品系统分类数据业务提供
     /// </summary>
-    public class ServiceCategoryProvider
+    public class MerchantGoodsSystemCategoryProvider
     {
         /// <summary>
         /// 初始化数据
         /// </summary>
         /// <param name="items"></param>
         /// <returns></returns>
-        public static bool InitDB(IEnumerable<Service_SystemCategory> items, string connectionString)
+        public static bool InitDB(IEnumerable<MerchantGoods_SystemCategory> items, string connectionString)
         {
             using (var db = new DataContext(connectionString))
             {
                 if (null == items || items.Count() < 1) return false;
 
-                var all = db.Service_SystemCategory.ToList();
-                db.Service_SystemCategory.RemoveRange(all);
+                var all = db.Library_Category.ToList();
+                db.Library_Category.RemoveRange(all);
 
                 foreach (var item in items)
                 {
-                    var model = new Service_SystemCategory();
-                    model.CategoryID = item.CategoryID;
-                    model.IsDisabled = item.IsDisabled;
-                    model.Icon = item.Icon;
-                    model.CategoryPath = item.CategoryPath;
+                    var model = new MerchantGoods_SystemCategory();
                     model.Name = item.Name;
-                    model.OrderNo = item.OrderNo;
+                    model.CategoryID = item.CategoryID;
                     model.IsDelete = item.IsDelete;
-                    model.ParentCategoryID = item.ParentCategoryID;
                     model.CreateTime = DateTime.Now;
+                    model.OrderNo = 0;
+                    model.CategoryPath = item.CategoryPath;
+                    model.Icon = item.Icon;
+                    model.IsDisabled = item.IsDisabled;
+                    model.ParentCategoryID = item.ParentCategoryID;
 
-                    db.Service_SystemCategory.Add(model);
+                    db.MerchantGoods_SystemCategory.Add(model);
                 }
 
                 return db.SaveChanges() > 0;
@@ -51,7 +51,7 @@ namespace Td.Kylin.DataInit.ServiceProvider
         /// </summary>
         /// <param name="items"></param>
         /// <returns></returns>
-        public static bool UpdateDB(IEnumerable<Service_SystemCategory> items, string connectionString)
+        public static bool UpdateDB(IEnumerable<MerchantGoods_SystemCategory> items, string connectionString)
         {
             using (var db = new DataContext(connectionString))
             {
@@ -59,34 +59,35 @@ namespace Td.Kylin.DataInit.ServiceProvider
 
                 foreach (var item in items)
                 {
-                    var model = db.Service_SystemCategory.SingleOrDefault(p => p.CategoryID == item.CategoryID);
+                    var model = db.MerchantGoods_SystemCategory.SingleOrDefault(p => p.CategoryID == item.CategoryID);
 
                     if (null != model)
                     {
-                        db.Service_SystemCategory.Attach(model);
+                        db.MerchantGoods_SystemCategory.Attach(model);
                         db.Entry(model).State = EntityState.Modified;
-                        model.IsDisabled = item.IsDisabled;
-                        model.Icon = item.Icon;
-                        model.CategoryPath = item.CategoryPath;
                         model.Name = item.Name;
-                        model.OrderNo = item.OrderNo;
                         model.IsDelete = item.IsDelete;
+                        model.CreateTime = DateTime.Now;
+                        model.OrderNo = 0;
+                        model.CategoryPath = item.CategoryPath;
+                        model.Icon = item.Icon;
+                        model.IsDisabled = item.IsDisabled;
                         model.ParentCategoryID = item.ParentCategoryID;
                     }
                     else
                     {
-                        model = new Service_SystemCategory();
-                        model.CategoryID = item.CategoryID;
-                        model.IsDisabled = item.IsDisabled;
-                        model.Icon = item.Icon;
-                        model.CategoryPath = item.CategoryPath;
+                        model = new MerchantGoods_SystemCategory();
                         model.Name = item.Name;
-                        model.OrderNo = item.OrderNo;
+                        model.CategoryID = item.CategoryID;
                         model.IsDelete = item.IsDelete;
-                        model.ParentCategoryID = item.ParentCategoryID;
                         model.CreateTime = DateTime.Now;
+                        model.OrderNo = 0;
+                        model.CategoryPath = item.CategoryPath;
+                        model.Icon = item.Icon;
+                        model.IsDisabled = item.IsDisabled;
+                        model.ParentCategoryID = item.ParentCategoryID;
 
-                        db.Service_SystemCategory.Add(model);
+                        db.MerchantGoods_SystemCategory.Add(model);
                     }
                 }
 
@@ -98,11 +99,11 @@ namespace Td.Kylin.DataInit.ServiceProvider
         /// 从数据库下载数据
         /// </summary>
         /// <returns></returns>
-        public static List<Service_SystemCategory> DownloadDB(string connectionString)
+        public static List<MerchantGoods_SystemCategory> DownloadDB(string connectionString)
         {
             using (var db = new DataContext(connectionString))
             {
-                return db.Service_SystemCategory.ToList();
+                return db.MerchantGoods_SystemCategory.ToList();
             }
         }
     }
