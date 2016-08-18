@@ -535,6 +535,7 @@
     <Content Include="attachfiles\industry\106111.png" />
     <Content Include="attachfiles\industry\106112.png" />
     <Content Include="attachfiles\industry\106999.png" />
+    <Content Include="xml\AdPosition_1.0.xml" />
     <Content Include="xml\AdPosition.xml" />
     <Content Include="xml\ApiAuthoriza.xml">
       <SubType>Designer</SubType>

@@ -27,6 +27,8 @@ namespace Td.Kylin.DataInit.ServiceProvider
                 //db.Merchant_Industry.AttachRange(all);
                 db.Merchant_Industry.RemoveRange(all);
 
+                db.SaveChanges();
+
                 foreach (var item in items)
                 {
                     var model = new Merchant_Industry();

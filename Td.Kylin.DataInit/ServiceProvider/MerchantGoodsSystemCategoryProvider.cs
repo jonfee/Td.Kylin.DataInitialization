@@ -26,6 +26,8 @@ namespace Td.Kylin.DataInit.ServiceProvider
                 var all = db.Library_Category.ToList();
                 db.Library_Category.RemoveRange(all);
 
+                db.SaveChanges();
+
                 foreach (var item in items)
                 {
                     var model = new MerchantGoods_SystemCategory();

@@ -27,6 +27,8 @@ namespace Td.Kylin.DataInit.ServiceProvider
                 //db.System_EmpiricalConfig.AttachRange(all);
                 db.System_EmpiricalConfig.RemoveRange(all);
 
+                db.SaveChanges();
+
                 foreach (var item in items)
                 {
                     var model = new System_EmpiricalConfig();

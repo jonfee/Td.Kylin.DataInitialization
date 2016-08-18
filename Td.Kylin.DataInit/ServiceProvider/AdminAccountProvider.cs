@@ -28,6 +28,8 @@ namespace Td.Kylin.DataInit.ServiceProvider
                 //db.Admin_Account.AttachRange(all);
                 db.Admin_Account.RemoveRange(all);
 
+                db.SaveChanges();
+
                 foreach (var item in items)
                 {
                     db.Admin_Account.Add(new Entity.Admin_Account

@@ -26,6 +26,8 @@ namespace Td.Kylin.DataInit.ServiceProvider
                 var all = db.Service_SystemCategory.ToList();
                 db.Service_SystemCategory.RemoveRange(all);
 
+                db.SaveChanges();
+
                 foreach (var item in items)
                 {
                     var model = new Service_SystemCategory();

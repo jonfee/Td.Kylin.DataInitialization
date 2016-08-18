@@ -27,6 +27,8 @@ namespace Td.Kylin.DataInit.ServiceProvider
                 //db.Job_Category.AttachRange(all);
                 db.Job_Category.RemoveRange(all);
 
+                db.SaveChanges();
+
                 foreach (var item in items)
                 {
                     var model = new Job_Category();

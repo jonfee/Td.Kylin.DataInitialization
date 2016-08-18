@@ -26,6 +26,8 @@ namespace Td.Kylin.DataInit.ServiceProvider
                 var all = db.System_PointsConfig.ToList();
                 db.System_PointsConfig.RemoveRange(all);
 
+                db.SaveChanges();
+
                 foreach (var item in items)
                 {
                     var model = db.System_PointsConfig.SingleOrDefault(p => p.ActivityType == item.ActivityType);

@@ -27,6 +27,8 @@ namespace Td.Kylin.DataInit.ServiceProvider
                 //db.System_ModuleAuthorize.AttachRange(all);
                 db.System_ModuleAuthorize.RemoveRange(all);
 
+                db.SaveChanges();
+
                 foreach (var item in items)
                 {
                     db.System_ModuleAuthorize.Add(new Entity.System_ModuleAuthorize

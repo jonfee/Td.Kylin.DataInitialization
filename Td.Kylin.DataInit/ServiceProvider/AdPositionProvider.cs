@@ -32,6 +32,8 @@ namespace Td.Kylin.DataInit.ServiceProvider
                 //db.Ad_Page.AttachRange(allPages);
                 db.Ad_Position.RemoveRange(allPositions);
 
+                db.SaveChanges();
+
                 foreach (var item in items)
                 {
                     db.Ad_Page.Add(new Entity.Ad_Page

@@ -27,6 +27,8 @@ namespace Td.Kylin.DataInit.ServiceProvider
                 if (null != list && list.Count > 0)
                 {
                     db.System_Level.RemoveRange(list);
+
+                    db.SaveChanges();
                 }
 
                 foreach (var item in items)

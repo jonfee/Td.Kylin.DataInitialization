@@ -26,6 +26,8 @@ namespace Td.Kylin.DataInit.ServiceProvider
                 var all = db.System_Area.ToList();
                 db.System_Area.RemoveRange(all);
 
+                db.SaveChanges();
+
                 foreach (var item in items)
                 {
                     var area = db.System_Area.SingleOrDefault(p => p.AreaID == item.AreaID);

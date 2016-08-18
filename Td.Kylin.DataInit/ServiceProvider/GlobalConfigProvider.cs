@@ -27,6 +27,8 @@ namespace Td.Kylin.DataInit.ServiceProvider
                 //db.System_GlobalResources.AttachRange(all);
                 db.System_GlobalResources.RemoveRange(all);
 
+                db.SaveChanges();
+
                 foreach (var item in items)
                 {
                     var model = new System_GlobalResources();
