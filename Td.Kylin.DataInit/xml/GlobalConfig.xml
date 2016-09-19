@@ -78,27 +78,27 @@
   </module>
   <module id="32" name="推送消息模板">
     <group name="社区">
-      <option type="1" name="帖子被置顶" value="" unit="0"></option>
+      <option type="1" name="帖子被置顶" value="“恭喜您,您发布的一篇深度好文,已被置顶,快去看看吧”.操作:点击/滑动进入帖子详情" unit="0"></option>
     </group>
     <group name="认证">
-      <option type="2" name="实名认证审核成功" value="" unit="0"></option>
-      <option type="3" name="实名认证审核失败" value="" unit="0"></option>
+      <option type="2" name="实名认证审核成功" value="“同志！你的身份组织已经核对确认了，组织对你寄予厚望！”操作:点击/滑动进入我的资料页面" unit="0"></option>
+      <option type="3" name="实名认证审核失败" value="您的实名认证审核失败了,请查看详情”.操作:点击/滑动进入该系统消息详情页" unit="0"></option>
     </group>
     <group name="业务申请">
-      <option type="4" name="申请跑腿业务审核成功" value="" unit="0"></option>
-      <option type="5" name="申请跑腿业务审核失败" value="" unit="0"></option>
+      <option type="4" name="申请跑腿业务审核成功" value="“好消息，好消息！您申请开通的跑腿业务已经审核通过，快去接单吧！”操作:点击/滑动进入接单中心页面" unit="0"></option>
+      <option type="5" name="申请跑腿业务审核失败" value="“您提交的跑腿申请资料不符合平台要求，请查看详情’”操作:点击/滑动进入该系统消息详情页面" unit="0"></option>
     </group>
     <group name="全心直营">
-      <option type="6" name="直营订单已发货通知" value="" unit="0"></option>
-      <option type="8" name="运营商取消订单" value="" unit="0"></option>
-      <option type="9" name="直营订单派送通知" value="" unit="0"></option>
+      <option type="6" name="直营订单已发货通知" value="“您的订单‘#OrderCode#’已经发货了”操作:点击/滑动进入该订单详情页面" unit="0"></option>
+      <option type="8" name="运营商取消订单" value="“您的订单‘#OrderCode#’已经被客服取消订单，去买点别的吧！详情联系客服‘#Mobile#’”操作:点击/滑动进入该订单详情页面" unit="0"></option>
+      <option type="9" name="直营订单派送通知" value="“接单了，接单了！有新指派的订单需要确定，快去处理吧！”操作:点击/滑动进入该订单详情页面" unit="0"></option>
       <option type="13" name="订单下单后提示用户" value="" unit="0"></option>
     </group>
     <group name="同城跑腿">
-      <option type="7" name="跑腿订单已完成送达" value="" unit="0"></option>
-      <option type="10" name="跑腿订单抢单推送" value="" unit="0"></option>
-      <option type="11" name="跑腿订单报价" value="" unit="0"></option>
-      <option type="12" name="用户完成跑腿订单" value="" unit="0"></option>
+      <option type="7" name="跑腿订单已完成送达" value="“您的订单‘#OrderCode#’跑腿员已经送达，快去收货吧~”操作:点击/滑动进入该订单详情页面" unit="0"></option>
+      <option type="10" name="跑腿订单抢单推送" value="“新单来啦,快来抢单喽！”操作:点击/滑动进入接单中心页面并弹出报价弹窗" unit="0"></option>
+      <option type="11" name="跑腿订单报价" value="“您的跑腿订单跑腿员已经报价，赶快确定吧！”点击/滑动进入等待接单页面并弹出报价确认窗口" unit="0"></option>
+      <option type="12" name="用户完成跑腿订单" value="“订单‘#OrderCode#’用户确认收货”点击/滑动进入该订单详情页面" unit="0"></option>
     </group>
   </module>
   <module id="16" name="平台对区域默认抽成配置">
