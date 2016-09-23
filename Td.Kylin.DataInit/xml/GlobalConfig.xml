@@ -71,7 +71,7 @@
     </group>
     <group name="通知">
       <option type="3" name="新订单通知" value="【全心生活】您有新订单等待处理，订单#OrderCode#下单时间#OrderTime#，快去处理吧!" unit="0"></option>
-      <option type="4" name="跑腿业务申请通知" value="【全心生活】#Name#(#Mobile#)申请了跑腿业务,需要你的审核！" unit="0"></option>
+      <option type="4" name="跑腿业务申请通知" value="【全心生活】#Name#申请了跑腿业务,需要你的审核！" unit="0"></option>
       <option type="5" name="库存预警通知" value="【全心生活】您上架的#SkuName#太畅销了，只剩下#Inventory#件了，快去补充库存吧！" unit="0"></option>
       <option type="6" name="直营订单派送通知" value="【全心生活】接单了，接单了！一份新的配送订单#OrderCode#等待您的确认，请注意查收!" unit="0"></option>
     </group>

@@ -422,6 +422,7 @@
     <Content Include="attachfiles\advertposition\U01001_nearby004.png" />
     <Content Include="attachfiles\advertposition\U01001_nearby005.png" />
     <Content Include="attachfiles\advertposition\U01001_startalways.jpg" />
+    <Content Include="attachfiles\advertposition\U01002_forumxqsq001.jpg" />
     <Content Include="attachfiles\advertposition\W01001_startalways.jpg" />
     <Content Include="attachfiles\industry\101.png" />
     <Content Include="attachfiles\industry\101101.png" />
@@ -541,6 +542,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="xml\GlobalConfig.xml" />
+    <Content Include="xml\GlobalConfig_1.0.xml" />
     <Content Include="xml\Industry.xml" />
     <Content Include="xml\JobCategory.xml" />
     <Content Include="xml\Points.xml" />
