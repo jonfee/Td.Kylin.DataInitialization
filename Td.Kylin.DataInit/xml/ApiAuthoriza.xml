@@ -154,4 +154,12 @@
   <authorize  serverid= "S2000" moduleid= "U001" secret= "7fdeca00-70da-4aa1-9774-ad579e341884" role="4"/>
   <authorize  serverid= "S2000" moduleid= "U002" secret= "73706011-995e-49ed-b0a2-948dcc50478f" role="4"/>
   <authorize  serverid= "S2000" moduleid= "U003" secret= "9f37c449-edb5-4c78-9d13-964c53b262ec" role="4"/>
+
+  <!--优惠券-->
+  <authorize  serverid= "S2100" moduleid= "F001" secret= "1e5d2b1b-5b85-43f9-9a3c-e8323623b8db" role="4"/>
+  <authorize  serverid= "S2100" moduleid= "F002" secret= "89ac82d6-a4db-48c9-91a4-6a2e66761565" role="4"/>
+  <authorize  serverid= "S2100" moduleid= "F003" secret= "c3d1a72c-246d-4667-bdae-31d2f6f4c5e2" role="4"/>
+  <authorize  serverid= "S2100" moduleid= "U001" secret= "560e95b0-8354-4c7e-b504-def43983e235" role="4"/>
+  <authorize  serverid= "S2100" moduleid= "U002" secret= "6bd76041-73e7-4b67-b11c-d9c4e79b468b" role="4"/>
+  <authorize  serverid= "S2100" moduleid= "U003" secret= "d3a76557-7daf-4b22-893a-5f4773eaa621" role="4"/>
 </root>
