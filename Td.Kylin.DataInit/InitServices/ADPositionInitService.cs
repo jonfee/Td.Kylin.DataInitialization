@@ -135,6 +135,9 @@ namespace Td.Kylin.DataInit.InitServices
                         adposition.MaxCount = Convert.ToInt32(position.Attribute("maxcount").Value);
                         adposition.Name = position.Attribute("name").Value;
                         adposition.PreViewPicture = position.Attribute("pic").Value;
+                        adposition.PreviewStyle = position.Attribute("style").Value;
+                        adposition.LimitWidth = int.Parse(position.Attribute("width").Value);
+                        adposition.LimitHeight = int.Parse(position.Attribute("height").Value);
                         adposition.PageID = adpage.ID;
 
                         positionList.Add(adposition);

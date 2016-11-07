@@ -300,8 +300,8 @@
       <HintPath>..\packages\Td.CoreLibrary.1.2.5\lib\net452\Td.CoreLibrary.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Td.Kylin.Entity, Version=1.1.9.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Td.Kylin.Entity.1.1.9\lib\net46\Td.Kylin.Entity.dll</HintPath>
+    <Reference Include="Td.Kylin.Entity, Version=1.8.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Td.Kylin.Entity.1.8.3\lib\net46\Td.Kylin.Entity.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Td.Kylin.EnumLibrary, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">

@@ -77,5 +77,20 @@ namespace Td.Kylin.DataInit.Model
         /// 广告位描述
         /// </summary>
         public string Intro { get; set; }
+
+        /// <summary>
+        /// 限制宽
+        /// </summary>
+        public int LimitWidth { get; set; }
+
+        /// <summary>
+        /// 限制高
+        /// </summary>
+        public int LimitHeight { get; set; }
+
+        /// <summary>
+        /// 预览样式
+        /// </summary>
+        public string PreviewStyle { get; set; }
     }
 }

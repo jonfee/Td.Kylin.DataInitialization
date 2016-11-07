@@ -57,6 +57,9 @@ namespace Td.Kylin.DataInit.ServiceProvider
                         adposition.PageID = position.PageID;
                         adposition.PositionID = position.ID;
                         adposition.PreviewPicture = position.PreViewPicture;
+                        adposition.PreviewStyle = position.PreviewStyle;
+                        adposition.LimitWidth = position.LimitWidth;
+                        adposition.LimitHeight = position.LimitHeight;
 
                         db.Ad_Position.Add(adposition);
                     }
@@ -110,6 +113,9 @@ namespace Td.Kylin.DataInit.ServiceProvider
                             adposition.MaxCount = position.MaxCount;
                             adposition.PageID = position.PageID;
                             adposition.PreviewPicture = position.PreViewPicture;
+                            adposition.PreviewStyle = position.PreviewStyle;
+                            adposition.LimitWidth = position.LimitWidth;
+                            adposition.LimitHeight = position.LimitHeight;
                         }
                         else
                         {
@@ -124,6 +130,9 @@ namespace Td.Kylin.DataInit.ServiceProvider
                             adposition.PageID = position.PageID;
                             adposition.PositionID = position.ID;
                             adposition.PreviewPicture = position.PreViewPicture;
+                            adposition.PreviewStyle = position.PreviewStyle;
+                            adposition.LimitWidth = position.LimitWidth;
+                            adposition.LimitHeight = position.LimitHeight;
 
                             db.Ad_Position.Add(adposition);
                         }
@@ -153,8 +162,10 @@ namespace Td.Kylin.DataInit.ServiceProvider
                                             MaxCount = position.MaxCount,
                                             Name = position.Name,
                                             PageID = position.PageID,
-                                            PreViewPicture = position.PreviewPicture
-
+                                            PreViewPicture = position.PreviewPicture,
+                                            LimitHeight = position.LimitHeight,
+                                            LimitWidth = position.LimitWidth,
+                                            PreviewStyle = position.PreviewStyle
                                         }).AsEnumerable()
                             join page in db.Ad_Page
                             on ps.PageID equals page.PageID
