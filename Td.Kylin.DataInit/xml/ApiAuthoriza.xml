@@ -162,4 +162,9 @@
   <authorize  serverid= "S2100" moduleid= "U001" secret= "560e95b0-8354-4c7e-b504-def43983e235" role="4"/>
   <authorize  serverid= "S2100" moduleid= "U002" secret= "6bd76041-73e7-4b67-b11c-d9c4e79b468b" role="4"/>
   <authorize  serverid= "S2100" moduleid= "U003" secret= "d3a76557-7daf-4b22-893a-5f4773eaa621" role="4"/>
+
+  <!--专题-->>
+  <authorize  serverid= "S2200" moduleid= "U001" secret= "b504def4-560e-95b0-8354-e2354c7e3983" role="4"/>
+  <authorize  serverid= "S2200" moduleid= "U002" secret= "6bd773e7-4b67-6041-b11c-468bd9c4e79b" role="4"/>
+  <authorize  serverid= "S2200" moduleid= "H5001" secret= "e79b6b41-b11c-468b-4b67-e7d9c473d760" role="4"/>
 </root>
