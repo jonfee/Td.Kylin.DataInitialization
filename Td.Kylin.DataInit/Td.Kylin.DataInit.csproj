@@ -540,6 +540,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="xml\AdPosition.xml" />
+    <Content Include="xml\AdPosition_3.0.xml" />
     <Content Include="xml\AdPosition_2.0.xml" />
     <Content Include="xml\ApiAuthoriza.xml">
       <SubType>Designer</SubType>

@@ -18,34 +18,29 @@
   *     intro:        广告位描述
   -->
   <client key="1" value="用户端">
-    <adpage id="1001" name="启动页">
-      <adposition id="1001001" code="U01001_startalways" name="启动广告" maxcount="1" enable="true" displaytype="8" width="720" height="1032" pic="/img1/advertposition/U01001_startalways.png"  intro="APP启动时展示图片，默认N秒后自动进入APP首页，无任何点击事件" style=""></adposition>
+    <adpage id="1001" name="启动页" pic="/default/ad/page/1001.png">
+      <adposition id="1001001" code="U01001_startalways" name="启动广告" maxcount="1" enable="true" displaytype="8" width="720" height="1032" pic="/default/ad/position/U01001_startalways.png"  intro="APP启动时展示图片，默认N秒后自动进入APP首页，无任何点击事件" style=""></adposition>
     </adpage>
-    <adpage id="10201" name="首页">
-      <adposition id="10201001" code="U01002_home001" name="顶部通栏Banner" maxcount="6" enable="true" displaytype="1" width="720" height="430" pic="/img1/advertposition/U01002_home001.png"  intro="一般为多个图片广告，自动滚动（或手动滑动）广告图可切换，点击后进入相应的内容页.尺寸标准为：720*430像素" style="height:192px;top: 64px;left: 0;width:100%;"></adposition>
-      <adposition id="10201002" code="U01002_home002" name="中部横幅" maxcount="1" enable="true" displaytype="2" width="680" height="340" pic="/img1/advertposition/U01002_home002.png"  intro="一般为单个图片广告，点击后进入相应的内容页.尺寸标准为：680*340像素" style="width: 302px;height: 151px;left: 9px;top: 602px;"></adposition>
-      <adposition id="10201003" code="U01002_home003" name="中部左一按钮广告" maxcount="1" enable="true" displaytype="2" width="330" height="330" pic="/img1/advertposition/U01002_home003.png"  intro="一般为单个图片广告，点击后进入相应的内容页.尺寸标准为：330*330像素" style="width: 151px;height: 146px;top: 762px;left: 9px;"></adposition>
-      <adposition id="10201004" code="U01002_home004" name="中部右一按钮广告" maxcount="1" enable="true" displaytype="2" width="330" height="330" pic="/img1/advertposition/U01002_home004.png"  intro="一般为单个图片广告，点击后进入相应的内容页.尺寸标准为：330*330像素" style="width: 151px;height: 146px;top: 762px;left: 162px;"></adposition>
-      <adposition id="10201005" code="U01002_home005" name="底部横幅一" maxcount="1" enable="true" displaytype="2" width="680" height="340" pic="/img1/advertposition/U01002_home005.png"  intro="一般为单个图片广告，点击后进入相应的内容页.尺寸标准为：680*340像素" style="left: 9px;width: 302px;height: 151px;top: 1227px;"></adposition>
-      <adposition id="10201006" code="U01002_home006" name="底部左一按钮广告" maxcount="1" enable="true" displaytype="2" width="330" height="330" pic="/img1/advertposition/U01002_home006.png"  intro="一般为单个图片广告，点击后进入相应的内容页.尺寸标准为：330*330像素" style="width: 151px;height: 146px;top: 1388px;left: 9px;"></adposition>
-      <adposition id="10201007" code="U01002_home007" name="底部右一按钮广告" maxcount="1" enable="true" displaytype="2" width="330" height="330" pic="/img1/advertposition/U01002_home007.png"  intro="一般为单个图片广告，点击后进入相应的内容页.尺寸标准为：330*330像素" style="width: 151px;height: 146px;top: 1388px;left: 162px;"></adposition>
-      <adposition id="10201008" code="U01002_home008" name="底部横幅二" maxcount="1" enable="true" displaytype="2" width="680" height="340" pic="/img1/advertposition/U01002_home008.png"  intro="一般为单个图片广告，点击后进入相应的内容页.尺寸标准为：680*340像素" style="left: 9px;width: 302px;height: 151px;top: 1546px;"></adposition>
+    <adpage id="1006" name="兴趣社区首页" pic="/default/ad/page/1006.png">
+      <adposition id="1006002" code="U01002_forumxqsq001" name="顶部通栏" maxcount="6" enable="true" displaytype="1" width="720" height="320" pic="/default/ad/position/U01002forumxqsq001.png"  intro="一般为多个图片广告，自动滚动（或手动滑动）广告图可切换，点击后进入相应的内容页.尺寸标准为：720*320像素" style="top: 45px;height: 118px;"></adposition>
     </adpage>
-    <adpage id="10202" name="淘一淘之精选实惠">
-      <adposition id="10202001" code="U01002_malljxsh001" name="顶部通栏Banner" maxcount="6" enable="true" displaytype="1" width="720" height="320" pic="/img1/advertposition/U01002_malljxsh001.png"  intro="一般为多个图片广告，自动滚动（或手动滑动）广告图可切换，点击后进入相应的内容页.尺寸标准为：720*320像素" style="top: 127px;height: 142px;border: 1px solid red;"></adposition>
-      <adposition id="10202002" code="U01002_malljxsh002" name="中部横幅一" maxcount="1" enable="true" displaytype="2" width="680" height="280" pic="/img1/advertposition/U01002_malljxsh002.png"  intro="一般为单个图片广告，点击后进入相应的内容页.尺寸标准为：680*280像素" style="width: 302px;height: 124px;top: 294px;left: 8px;"></adposition>
-      <adposition id="10202003" code="U01002_malljxsh003" name="中部左一按钮广告" maxcount="1" enable="true" displaytype="2" width="330" height="330" pic="/img1/advertposition/U01002_malljxsh003.png"  intro="一般为单个图片广告，点击后进入相应的内容页.尺寸标准为：330*330像素" style="width: 150px;height: 146px;top: 478px;left: 8px;"></adposition>
-      <adposition id="10202004" code="U01002_malljxsh004" name="中部右一按钮广告" maxcount="1" enable="true" displaytype="2" width="330" height="330" pic="/img1/advertposition/U01002_malljxsh004.png"  intro="一般为单个图片广告，点击后进入相应的内容页.尺寸标准为：330*330像素" style="width: 150px;height: 146px;top: 478px;left: 162px;"></adposition>
-      <adposition id="10202005" code="U01002_malljxsh005" name="中部通栏二" maxcount="1" enable="true" displaytype="2" width="680" height="350" pic="/img1/advertposition/U01002_malljxsh005.png"  intro="一般为单个图片广告，点击后进入相应的内容页.尺寸标准为：680*350像素" style="width: 302px;height: 153px;top: 634px;left: 8px;"></adposition>
+    <adpage id="103001" name="【1.3.x】首页" pic="/default/ad/page/103001.png">
+      <adposition id="103001001" code="U01003_home001" name="【1.3.x】首页-顶部通栏轮播" maxcount="6" enable="true" displaytype="1" width="720" height="430" pic="/default/ad/position/U01003_home001.png"  intro="一般为多个图片广告，自动滚动（或手动滑动）广告图可切换，点击后进入相应的内容页.尺寸标准为：720*430像素" style="height:192px;top: 64px;left: 0;width:100%;"></adposition>
+      <adposition id="103001002" code="U01003_home002" name="【1.3.x】首页-中部横幅1" maxcount="1" enable="true" displaytype="2" width="720" height="300" pic="/default/ad/position/U01003_home002.png"  intro="一般为单个图片广告，点击后进入相应的内容页.尺寸标准为：720*300像素" style="width: 302px;height: 151px;left: 9px;top: 602px;"></adposition>
+      <adposition id="103001003" code="U01003_home003" name="【1.3.x】首页-中部横幅2" maxcount="1" enable="true" displaytype="2" width="720" height="300" pic="/default/ad/position/U01003_home003.png"  intro="一般为单个图片广告，点击后进入相应的内容页.尺寸标准为：720*300像素" style="width: 302px;height: 151px;left: 9px;top: 602px;"></adposition>
+      <adposition id="103001004" code="U01003_home004" name="【1.3.x】首页-中部横幅3" maxcount="1" enable="true" displaytype="2" width="720" height="300" pic="/default/ad/position/U01003_home004.png"  intro="一般为单个图片广告，点击后进入相应的内容页.尺寸标准为：720*300像素" style="width: 302px;height: 151px;left: 9px;top: 602px;"></adposition>
+      <adposition id="103001005" code="U01003_home005" name="【1.3.x】首页-中部横幅4" maxcount="1" enable="true" displaytype="2" width="720" height="300" pic="/default/ad/position/U01003_home005.png"  intro="一般为单个图片广告，点击后进入相应的内容页.尺寸标准为：720*300像素" style="width: 302px;height: 151px;left: 9px;top: 602px;"></adposition>
     </adpage>
-    <adpage id="10203" name="淘一淘之全心直营">
-      <adposition id="10203001" code="U01002_mallqxzy001" name="顶部通栏Banner" maxcount="6" enable="true" displaytype="1" width="720" height="320" pic="/img1/advertposition/U01002_mallqxzy001.png"  intro="一般为多个图片广告，自动滚动（或手动滑动）广告图可切换，点击后进入相应的内容页.尺寸标准为：720*320像素" style="top: 127px;height: 142px;border: 1px solid red;"></adposition>
+    <adpage id="103002" name="【1.3.x】全心精选" pic="/default/ad/page/103002.png">
+      <adposition id="103002001" code="U01003_mallqxjx001" name="【1.3.x】全心精选-顶部通栏轮播" maxcount="6" enable="true" displaytype="1" width="720" height="430" pic="/default/ad/position/U01003_mallqxjx001.png"  intro="一般为多个图片广告，自动滚动（或手动滑动）广告图可切换，点击后进入相应的内容页.尺寸标准为：720*430像素" style="top: 127px;height: 142px;"></adposition>
+      <adposition id="103002002" code="U01003_mallqxjx002" name="【1.3.x】全心精选-中部横幅一" maxcount="1" enable="true" displaytype="2" width="720" height="300" pic="/default/ad/position/U01003_mallqxjx002.png"  intro="一般为单个图片广告，点击后进入相应的内容页.尺寸标准为：720*300像素" style="width: 302px;height: 124px;top: 294px;left: 8px;"></adposition>
+      <adposition id="103002003" code="U01003_mallqxjx003" name="【1.3.x】全心精选-中部左一按钮广告" maxcount="1" enable="true" displaytype="2" width="360" height="360" pic="/default/ad/position/U01003_mallqxjx003.png"  intro="一般为单个图片广告，点击后进入相应的内容页.尺寸标准为：360*360像素" style="width: 150px;height: 146px;top: 478px;left: 8px;"></adposition>
+      <adposition id="103002004" code="U01003_mallqxjx004" name="【1.3.x】全心精选-中部右一按钮广告" maxcount="1" enable="true" displaytype="2" width="360" height="360" pic="/default/ad/position/U01003_mallqxjx004.png"  intro="一般为单个图片广告，点击后进入相应的内容页.尺寸标准为：360*360像素" style="width: 150px;height: 146px;top: 478px;left: 162px;"></adposition>
+      <adposition id="103002005" code="U01003_mallqxjx005" name="【1.3.x】全心精选-中部通栏二" maxcount="1" enable="true" displaytype="2" width="720" height="360" pic="/default/ad/position/U01003_mallqxjx005.png"  intro="一般为单个图片广告，点击后进入相应的内容页.尺寸标准为：720*360像素" style="width: 302px;height: 153px;top: 634px;left: 8px;"></adposition>
+      <adposition id="103002006" code="U01003_mallqxjx006" name="【1.3.x】全心精选-底部通栏" maxcount="1" enable="true" displaytype="2" width="720" height="360" pic="/default/ad/position/U01003_mallqxjx006.png"  intro="一般为单个图片广告，点击后进入相应的内容页.尺寸标准为：720*360像素" style="width: 302px;height: 153px;top: 634px;left: 8px;"></adposition>
     </adpage>
-    <adpage id="10204" name="淘一淘之限时抢购">
-      <adposition id="10204001" code="U01002_mallxsqg001" name="顶部通栏Banner" maxcount="6" enable="true" displaytype="1" width="720" height="320" pic="/img1/advertposition/U01002_mallxsqg001.png"  intro="一般为多个图片广告，自动滚动（或手动滑动）广告图可切换，点击后进入相应的内容页.尺寸标准为：720*320像素" style="top: 127px;height: 142px;border: 1px solid red;"></adposition>
-    </adpage>
-    <adpage id="1006" name="兴趣社区首页">
-      <adposition id="1006002" code="U01002_forumxqsq001" name="顶部通栏" maxcount="6" enable="true" displaytype="1" width="720" height="320" pic="/img1/advertposition/U01002forumxqsq001.png"  intro="一般为多个图片广告，自动滚动（或手动滑动）广告图可切换，点击后进入相应的内容页.尺寸标准为：720*320像素" style="top: 45px;height: 118px;"></adposition>
+    <adpage id="103003" name="【1.3.x】限时抢购" pic="/default/ad/page/103003.png">
+      <adposition id="103003001" code="U01003_mallxsqg001" name="【1.3.x】限时抢购-顶部通栏轮播" maxcount="6" enable="true" displaytype="1" width="720" height="320" pic="/default/ad/position/U01003_mallxsqg001.png"  intro="一般为多个图片广告，自动滚动（或手动滑动）广告图可切换，点击后进入相应的内容页.尺寸标准为：720*320像素" style="top: 127px;height: 142px;"></adposition>
     </adpage>
   </client>
 </root>
